@@ -6,6 +6,7 @@ public class FollowCamera : MonoBehaviour
 {
     public Transform target;
     float offsetX;
+    float fixedYValue = 2.5f;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class FollowCamera : MonoBehaviour
 
         Vector3 pos = transform.position;
         pos.x = target.position.x + offsetX;
+        pos.y = fixedYValue;
         transform.position = pos;
     }
 }

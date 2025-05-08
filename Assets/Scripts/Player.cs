@@ -1,76 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    Rigidbody2D _rigidbody = null;
+    private Rigidbody2D _rigidbody;
 
-    [SerializeField] private float jumpForce = 6f;
+    private MovementController _movementController = new MovementController();
+    private JumpController _jumpController = new JumpController();
+    private GroundChecker _groundChecker = new GroundChecker();
+
     [SerializeField] private float forwardSpeed = 3f;
     [SerializeField] private float acceleration = 0.1f;
     [SerializeField] private float maxSpeed = 10f;
 
-    private int jumpCount = 0;
-
-    private float totalAcceleration = 0f;
-
-    private bool isJumping = false;
-    private bool isGrounded = false;
+    [SerializeField] private float jumpForce = 6f;
+    [SerializeField] private int maxJumpCount = 2;
 
     void Start()
     {
-        _rigidbody = transform.GetComponent<Rigidbody2D>();
-
+        _rigidbody = GetComponent<Rigidbody2D>();
         if (_rigidbody == null)
         {
             Debug.LogError("Not Founded Rigidbody");
         }
+
+        _movementController.Init(forwardSpeed, acceleration, maxSpeed);
+        _jumpController.Init(jumpForce, maxJumpCount);
+        _groundChecker.Init(_jumpController);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && jumpCount < 2)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            isJumping = true;
+            _jumpController.TryJump();
         }
     }
 
-    public void FixedUpdate()
+    void FixedUpdate()
     {
-        totalAcceleration += acceleration * Time.fixedDeltaTime;
-        totalAcceleration = Mathf.Min(totalAcceleration, maxSpeed - forwardSpeed);
-        
-        float currentSpeed = forwardSpeed + totalAcceleration;
-        currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
-
-        Vector3 velocity = _rigidbody.velocity;
-        velocity.x = currentSpeed;
-
-        if (isJumping)
-        {
-            velocity.y = jumpForce;
-            isJumping = false;
-            jumpCount++;
-        }
-
-        _rigidbody.velocity = velocity;
+        Vector2 newVelocity = _movementController.CalculateVelocity(_rigidbody.velocity);
+        newVelocity = _jumpController.ApplyJump(newVelocity);
+        _rigidbody.velocity = newVelocity;
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            jumpCount = 0;
-            isGrounded = true;
-        }
+        _groundChecker.OnCollisionEnter2D(collision);
     }
 
-    public void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
+        _groundChecker.OnCollisionExit2D(collision);
     }
 }
