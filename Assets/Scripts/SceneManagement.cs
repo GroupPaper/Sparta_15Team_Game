@@ -14,7 +14,7 @@ public class SceneManagement : MonoBehaviour
     // 메인 씬(게임 화면)으로 이동
     public void MainScene()
     {
-        SceneManager.LoadScene("sceneName");
+        SceneManager.LoadScene("MainSceneRyu");
     }
 
     // 게임 오버 씬으로 이동
