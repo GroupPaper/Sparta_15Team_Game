@@ -31,7 +31,7 @@ public class ScoreManager : MonoBehaviour
         {
             int gained = Mathf.FloorToInt(timeAccumulator * scoreMultiplier);
             timeScore += gained; // 점수 증가
-            timeAccumulator -= gained; // 누적 시간 감소
+            timeAccumulator = 0; // 누적 시간 초기화
             UpdateScoreText(); // UI 텍스트 업데이트
         }
     }
@@ -39,6 +39,7 @@ public class ScoreManager : MonoBehaviour
     private void UpdateScoreText()
     {
         int total = timeScore + itemScore; // 총 점수 계산
+        Debug.Log("Total Score: " + total); // 디버그 로그 출력
         scoreText.text = total.ToString(); // UI 텍스트 업데이트
 
         if (total > bestScore) // 최고 점수 갱신
@@ -51,6 +52,6 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateBestScoreText()
     {
-        bestScoreText.text = "Best: " + bestScore.ToString(); // UI 텍스트 업데이트
+        bestScoreText.text = bestScore.ToString(); // UI 텍스트 업데이트
     }
 }
