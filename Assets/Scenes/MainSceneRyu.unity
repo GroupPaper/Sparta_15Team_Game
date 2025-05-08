@@ -549,7 +549,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1881363209}
-  scoreMultiplier: 1
+  bestScoreText: {fileID: 1618273769}
+  scoreMultiplier: 2
 --- !u!4 &639980325
 Transform:
   m_ObjectHideFlags: 0

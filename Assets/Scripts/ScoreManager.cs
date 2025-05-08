@@ -3,31 +3,54 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-    public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour
+{
+    public TextMeshProUGUI scoreText; // UI 텍스트 컴포넌트
+    public TextMeshProUGUI bestScoreText; // UI 텍스트 컴포넌트
+
+    public float scoreMultiplier = 1f; // 초당 점수 증가율
+
+    private int timeScore = 0; // 점수
+    private int itemScore = 0; // 아이템 점수
+    private float timeAccumulator = 0; // 누적 시간
+
+    private int bestScore = 0; // 최고 점수
+
+    private void Start()
     {
-        public TextMeshProUGUI scoreText; // UI 텍스트 컴포넌트
-        public float scoreMultiplier = 1f; // 초당 점수 증가율
+        bestScore = PlayerPrefs.GetInt("BestScore", 0); // 저장된 최고 점수 불러오기
+        UpdateBestScoreText(); // UI 텍스트 업데이트
 
-        private int timeScore = 0; // 점수
-        private int itemScore = 0; // 아이템 점수
-        private float timeAccumulator = 0; // 누적 시간
+        UpdateScoreText(); // UI 텍스트 업데이트
+    }
+    private void Update()
+    {
+        timeAccumulator += Time.deltaTime; // 누적 시간 증가
 
-        private void Update()
+        if (timeAccumulator >= 1f) // 1초마다 점수 증가
         {
-            timeAccumulator += Time.deltaTime; // 누적 시간 증가
-
-            if (timeAccumulator >= 1f) // 1초마다 점수 증가
-            {
-                int gained = Mathf.FloorToInt(timeAccumulator * scoreMultiplier);
-                timeScore += gained; // 점수 증가
-                timeAccumulator -= gained; // 누적 시간 감소
-                UpdateScoreText(); // UI 텍스트 업데이트
-            }
-        }
-
-        private void UpdateScoreText()
-        {
-            int total = timeScore + itemScore; // 총 점수 계산
-            scoreText.text = total.ToString(); // UI 텍스트 업데이트
+            int gained = Mathf.FloorToInt(timeAccumulator * scoreMultiplier);
+            timeScore += gained; // 점수 증가
+            timeAccumulator -= gained; // 누적 시간 감소
+            UpdateScoreText(); // UI 텍스트 업데이트
         }
     }
+
+    private void UpdateScoreText()
+    {
+        int total = timeScore + itemScore; // 총 점수 계산
+        scoreText.text = total.ToString(); // UI 텍스트 업데이트
+
+        if (total > bestScore) // 최고 점수 갱신
+        {
+            bestScore = total; // 최고 점수 갱신
+            PlayerPrefs.SetInt("BestScore", bestScore); // 저장
+            UpdateBestScoreText(); // UI 텍스트 업데이트
+        }
+    }
+
+    private void UpdateBestScoreText()
+    {
+        bestScoreText.text = "Best: " + bestScore.ToString(); // UI 텍스트 업데이트
+    }
+}
