@@ -36,16 +36,15 @@ public class MovementController
         maxSpeed = originalMaxSpeed; // 버프 이전 속도로 초기화
     }
 
-    public Vector2 CalculateVelocity(Vector2 currentVelocity)
+    public float GetCurrentSpeed()
     {
-        totalAcceleration += acceleration * Time.fixedDeltaTime;
+        totalAcceleration += acceleration * Time.deltaTime;
         totalAcceleration = Mathf.Min(totalAcceleration, maxSpeed - forwardSpeed);
 
         float currentSpeed = forwardSpeed + totalAcceleration;
         currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
 
-        currentVelocity.x = currentSpeed;
-        return currentVelocity;
+        return currentSpeed;
     }
 
     public float GetTotalAcceleration()
