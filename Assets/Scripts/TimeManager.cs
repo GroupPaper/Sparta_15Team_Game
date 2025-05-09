@@ -18,4 +18,9 @@ public class TimeManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(elapsedTime % 60); // 초 계산
         timeText.text = string.Format("{0:D2}:{1:D2}", minutes, seconds); // UI 텍스트 업데이트
     }
+
+    public float GetElapsedTime() // 경과 시간 반환
+    {
+        return elapsedTime; // 경과 시간 반환
+    }
 }
