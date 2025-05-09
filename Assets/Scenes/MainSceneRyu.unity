@@ -862,7 +862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1881363209}
   bestScoreText: {fileID: 1618273769}
-  scoreMultiplier: 500
+  scoreMultiplier: 20
 --- !u!4 &639980325
 Transform:
   m_ObjectHideFlags: 0
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBar: {fileID: 1853190891}
-  maxHP: 100
+  maxHP: 300
   hpDecreaseRatePerSec: 5
 --- !u!114 &1853190891
 MonoBehaviour:
