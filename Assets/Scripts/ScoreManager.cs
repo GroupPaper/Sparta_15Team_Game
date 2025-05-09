@@ -16,6 +16,7 @@ public class ScoreManager : MonoBehaviour
 
     private int bestScore = 0; // ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½
 
+
     private void Start()
     {
         bestScore = PlayerPrefs.GetInt("BestScore", 0); // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
@@ -34,6 +35,11 @@ public class ScoreManager : MonoBehaviour
             timeAccumulator = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½Ê±ï¿½È­
             UpdateScoreText(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         }
+    }
+
+    public int GetTotalScore() // ÃÑ Á¡¼ö ¹ÝÈ¯
+    {
+        return timeScore + itemScore; // ½Ã°£ Á¡¼ö¿Í ¾ÆÀÌÅÛ Á¡¼ö ÇÕ»ê
     }
 
     private void UpdateScoreText()
