@@ -28,6 +28,11 @@ public class MovementController
         currentVelocity.x = currentSpeed;
         return currentVelocity;
     }
+
+    public float GetTotalAcceleration()
+    {
+        return totalAcceleration;
+    }
 }
 
 

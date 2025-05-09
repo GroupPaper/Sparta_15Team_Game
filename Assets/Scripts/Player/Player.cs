@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("점프");
             _jumpController.TryJump();
         }
     }
