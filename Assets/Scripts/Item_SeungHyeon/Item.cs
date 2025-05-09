@@ -8,9 +8,7 @@ public enum ItemEffectType {Heal, Speed, Score}
 public class Item : MonoBehaviour
 {
     public ItemEffectType itemEffect;
-    public int value;
-    public float duration;
-    public Player player; // 임시로 넣음 캐릭터 코드 구현하면 맞춰서 수정해야함
+    public Player player; 
     
     private void OnTriggerEnter2D(Collider2D other) // 캐릭터가 아이템이랑 충돌하는 경우
     {
