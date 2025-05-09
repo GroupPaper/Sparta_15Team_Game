@@ -10,6 +10,7 @@ public class Obstacle2 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log($"플레이어에게 접촉하여 {damage}의 데미지를 입혔습니다.");
             //플레이어에게 데미지 주는 내용추가 예정
 
             // if 플레이어 HP 0씨 GameOver 뜨게 예정?
