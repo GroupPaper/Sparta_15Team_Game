@@ -17,6 +17,12 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("MainSceneRyu");
     }
 
+    public void Retry()
+    {
+        Time.timeScale = 1f; // 게임 재개
+        SceneManager.LoadScene("MainSceneRyu"); // 메인 씬으로 이동
+    }
+
     // 게임 오버 씬으로 이동
     public void Exit()
     {
