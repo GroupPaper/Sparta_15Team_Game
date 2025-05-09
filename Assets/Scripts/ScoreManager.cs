@@ -16,6 +16,7 @@ public class ScoreManager : MonoBehaviour
 
     private int bestScore = 0; // 최고 점수
 
+
     private void Start()
     {
         bestScore = PlayerPrefs.GetInt("BestScore", 0); // 저장된 최고 점수 불러오기
@@ -34,6 +35,11 @@ public class ScoreManager : MonoBehaviour
             timeAccumulator = 0; // 누적 시간 초기화
             UpdateScoreText(); // UI 텍스트 업데이트
         }
+    }
+
+    public int GetTotalScore() // 총 점수 반환
+    {
+        return timeScore + itemScore; // 시간 점수와 아이템 점수 합산
     }
 
     private void UpdateScoreText()
