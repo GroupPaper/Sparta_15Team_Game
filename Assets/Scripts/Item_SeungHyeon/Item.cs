@@ -24,15 +24,15 @@ public class Item : MonoBehaviour
         switch (itemEffect)
         {
             case ItemEffectType.Heal:
-            // HPBar.Heal(10f); 스태틱 처리 필요함
+            player.HealFromItem(10f); // 스태틱 처리 필요함
             break;
 
         case ItemEffectType.Speed:
-            // MovementController.ApplySpeedItemBuff(5f, 3f); 3초동안 이동속도 5 증가가
+            player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가가
             break;
 
         case ItemEffectType.Score:
-            // ScoreManager.AddItemScore(30);
+            player.AddScoreFromItem(30);
             break;
         };
     }
