@@ -10,31 +10,31 @@ public class Item : MonoBehaviour
     public ItemEffectType itemEffect;
     public int value;
     public float duration;
-    public GameObject player; // 임시로 넣음 캐릭터 코드 구현하면 맞춰서 수정해야함
+    public Player player; // 임시로 넣음 캐릭터 코드 구현하면 맞춰서 수정해야함
     
     private void OnTriggerEnter2D(Collider2D other) // 캐릭터가 아이템이랑 충돌하는 경우
     {
         if(other.CompareTag("Player"))
         {
-            ApplyItemEffect(other.gameObject); // 추후 효과를 줄 대상을 인스펙터 창에서 연결하도록 설계 필요 other.GetComponent<player>()
-            Destroy(gameObject); // 아이템 제거
+            ApplyItemEffect(player); // 플레이어에게 아이템 효과를 적용한다.
+            Destroy(other); // 아이템 제거
         }
     }
 
-    private void ApplyItemEffect(GameObject player)
+    private void ApplyItemEffect(Player player)
     {
         switch (itemEffect)
         {
             case ItemEffectType.Heal:
-            // player.Heal(value);
+            // HPBar.Heal(10f); 스태틱 처리 필요함
             break;
 
         case ItemEffectType.Speed:
-            //player.ApplySpeedBoost(value, duration);
+            // MovementController.ApplySpeedItemBuff(5f, 3f); 3초동안 이동속도 5 증가가
             break;
 
         case ItemEffectType.Score:
-            //player.AddScore(value);
+            // ScoreManager.AddItemScore(30);
             break;
         };
     }
