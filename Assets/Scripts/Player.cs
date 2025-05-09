@@ -15,6 +15,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce = 6f;
     [SerializeField] private int maxJumpCount = 2;
 
+    // ApplyItemEffect 중개 메서드
+    public HPBar currentHP;
+    public MovementController movementController;
+    public ScoreManager scoreManager;
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -51,5 +56,21 @@ public class Player : MonoBehaviour
     void OnCollisionExit2D(Collision2D collision)
     {
         _groundChecker.OnCollisionExit2D(collision);
+    }
+
+    // ApplyItemEffect 중개 메서드
+    public void HealFromItem(float amount)
+    {
+        currentHP.Heal(amount);
+    }
+
+    public void ApplySpeedBuffFromItem(float bonus, float duration)
+    {
+        movementController.ApplySpeedItemBuff(bonus, duration);
+    }
+
+    public void AddScoreFromItem(int score)
+    {
+        scoreManager.AddItemScore(score);
     }
 }
