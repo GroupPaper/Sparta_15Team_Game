@@ -37,6 +37,5 @@ public class Item : MonoBehaviour
             //player.AddScore(value);
             break;
         };
-
     }
 }

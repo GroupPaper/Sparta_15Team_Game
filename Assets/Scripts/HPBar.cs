@@ -7,53 +7,69 @@ using UnityEngine.UI;
 
 public class HPBar : MonoBehaviour
 {
-    public Slider hpBar; // HP ¹Ù ½½¶óÀÌ´õ
+    public Slider hpBar; // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½
 
-    public int maxHP = 100; // ÃÖ´ë HP
-    private float currentHP; // ÇöÀç HP
+    public int maxHP = 100; // ï¿½Ö´ï¿½ HP
+    private float currentHP; // ï¿½ï¿½ï¿½ï¿½ HP
 
-    public float hpDecreaseRatePerSec = 5f; // ÃÊ´ç HP °¨¼Ò·®
+    public float hpDecreaseRatePerSec = 5f; // ï¿½Ê´ï¿½ HP ï¿½ï¿½ï¿½Ò·ï¿½
+
+    private bool isHealing = false; // ì²´ë ¥ íšŒë³µ íš¨ê³¼ ë”œë ˆì´ì‹œ ì‚¬ìš©ìš©
 
     void Start()
     {
-        currentHP = maxHP; // ÇöÀç HP¸¦ ÃÖ´ë HP·Î ÃÊ±âÈ­
-        hpBar.minValue = 0; // ½½¶óÀÌ´õ ÃÖ¼Ò°ª
-        hpBar.maxValue = maxHP; // ½½¶óÀÌ´õ ÃÖ´ë°ª
-        UpdateHPBarUI(); // HP ¹Ù ¾÷µ¥ÀÌÆ®
+        currentHP = maxHP; // ï¿½ï¿½ï¿½ï¿½ HPï¿½ï¿½ ï¿½Ö´ï¿½ HPï¿½ï¿½ ï¿½Ê±ï¿½È­
+        hpBar.minValue = 0; // ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½Ö¼Ò°ï¿½
+        hpBar.maxValue = maxHP; // ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½Ö´ë°ª
+        UpdateHPBarUI(); // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
     }
 
     private void Update()
     {
-        if(currentHP > 0)
+        if(currentHP > 0 && !isHealing) // ì²´ë ¥ íšŒë³µ íš¨ê³¼ ì‚¬ìš© ì•„ë‹ë•Œë§Œ í”¼ê°€ ê°ì†Œí•˜ë„ë¡ë¡
         {
-            currentHP -= hpDecreaseRatePerSec * Time.deltaTime; // HP °¨¼Ò
-            currentHP = Mathf.Clamp(currentHP, 0, maxHP); // HP¸¦ 0°ú maxHP »çÀÌ·Î Á¦ÇÑ
-            UpdateHPBarUI(); // HP ¹Ù ¾÷µ¥ÀÌÆ®
+            currentHP -= hpDecreaseRatePerSec * Time.deltaTime; // HP ï¿½ï¿½ï¿½ï¿½
+            currentHP = Mathf.Clamp(currentHP, 0, maxHP); // HPï¿½ï¿½ 0ï¿½ï¿½ maxHP ï¿½ï¿½ï¿½Ì·ï¿½ ï¿½ï¿½ï¿½ï¿½
+            UpdateHPBarUI(); // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 
             if ((currentHP <= 0))
             {
-                SceneManager.LoadScene("StartScene"); // HP°¡ 0 ÀÌÇÏ°¡ µÇ¸é Å¸ÀÌÆ² ¾ÀÀ¸·Î ÀÌµ¿(ÃßÈÄ °ÔÀÓ ¿À¹ö UI·Î º¯°æ ¿¹Á¤)
+                SceneManager.LoadScene("StartScene"); // HPï¿½ï¿½ 0 ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ç¸ï¿½ Å¸ï¿½ï¿½Æ² ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½(ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ UIï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
             }
         }
     }
 
     private void UpdateHPBarUI()
     {
-        hpBar.value = currentHP; // ½½¶óÀÌ´õ °ª ¾÷µ¥ÀÌÆ®
+        hpBar.value = currentHP; // ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    }
+
+    public void Heal(float healValue) // ì²´ë ¥ íšŒë³µ ì•„ì´í…œ ì‚¬ìš©
+    {
+        StartCoroutine(HealWithDelay(healValue));
+    }
+
+    private IEnumerator HealWithDelay(float healValue) // ì²´ë ¥ë°” ë³€í™”ì™€ ì•ˆê²¹ì¹˜ê²Œ ì½”ë£¨í‹´ ì‚¬ìš©
+    {
+        isHealing = true;
+        currentHP = Mathf.Clamp(currentHP + healValue, 0, maxHP);
+        UpdateHPBarUI();
+        yield return new WaitForSeconds(0.1f); // ì•„ì£¼ ì ê¹ ê¸°ë‹¤ë ¤ì¤Œ
+        isHealing = false;
     }
 
     /*
-    // HP¸¦ °¨¼Ò½ÃÅ°´Â ¸Ş¼­µå
+    // HPï¿½ï¿½ ï¿½ï¿½ï¿½Ò½ï¿½Å°ï¿½ï¿½ ï¿½Ş¼ï¿½ï¿½ï¿½
     public void TakeDamage(int damage)
     {
-        currentHP = Mathf.Clamp(currentHP - damage, 0, maxHP); // HP °¨¼Ò
-        UpdateHPBarUI(); // HP ¹Ù ¾÷µ¥ÀÌÆ®
+        currentHP = Mathf.Clamp(currentHP - damage, 0, maxHP); // HP ï¿½ï¿½ï¿½ï¿½
+        UpdateHPBarUI(); // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
     }
 
     public void Heal(int healAmount)
     {
-        currentHP = Mathf.Clamp(currentHP + healAmount, 0, maxHP); // HP È¸º¹
-        UpdateHPBarUI(); // HP ¹Ù ¾÷µ¥ÀÌÆ®
+        currentHP = Mathf.Clamp(currentHP + healAmount, 0, maxHP); // HP È¸ï¿½ï¿½
+        UpdateHPBarUI(); // HP ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
     }
     */
 }
