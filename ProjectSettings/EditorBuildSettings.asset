@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Charater.unity
+    guid: 4d261278dd507c245955be7920629f0f
+  - enabled: 1
+    path: Assets/Scenes/Item_SeungHyeon.unity
+    guid: 182e777ec5a5efd4da93ca5c3a70e155
+  - enabled: 1
+    path: Assets/Scenes/MainSceneRyu.unity
+    guid: 3ae3e35389c346c44ae4fa5ebbf94352
+  - enabled: 1
+    path: Assets/Scenes/Map2_SongJinWoo.unity
+    guid: f174fe462225662448daae7d526544ea
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 52cd9cf155f103647a0a326cae627321
   m_configObjects: {}
