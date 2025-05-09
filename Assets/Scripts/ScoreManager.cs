@@ -5,53 +5,65 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText; // UI ÅØ½ºÆ® ÄÄÆ÷³ÍÆ®
-    public TextMeshProUGUI bestScoreText; // UI ÅØ½ºÆ® ÄÄÆ÷³ÍÆ®
+    public TextMeshProUGUI scoreText; // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    public TextMeshProUGUI bestScoreText; // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 
-    public float scoreMultiplier = 1f; // ÃÊ´ç Á¡¼ö Áõ°¡À²
+    public float scoreMultiplier = 1f; // ï¿½Ê´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-    private int timeScore = 0; // Á¡¼ö
-    private int itemScore = 0; // ¾ÆÀÌÅÛ Á¡¼ö
-    private float timeAccumulator = 0; // ´©Àû ½Ã°£
+    private int timeScore = 0; // ï¿½ï¿½ï¿½ï¿½
+    private int itemScore = 0; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    private float timeAccumulator = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 
-    private int bestScore = 0; // ÃÖ°í Á¡¼ö
+    private int bestScore = 0; // ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½
+
 
     private void Start()
     {
-        bestScore = PlayerPrefs.GetInt("BestScore", 0); // ÀúÀåµÈ ÃÖ°í Á¡¼ö ºÒ·¯¿À±â
-        UpdateBestScoreText(); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+        bestScore = PlayerPrefs.GetInt("BestScore", 0); // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
+        UpdateBestScoreText(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 
-        UpdateScoreText(); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+        UpdateScoreText(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
     }
     private void Update()
     {
-        timeAccumulator += Time.deltaTime; // ´©Àû ½Ã°£ Áõ°¡
+        timeAccumulator += Time.deltaTime; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-        if (timeAccumulator >= 1f) // 1ÃÊ¸¶´Ù Á¡¼ö Áõ°¡
+        if (timeAccumulator >= 1f) // 1ï¿½Ê¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         {
-            int gained = Mathf.FloorToInt(timeAccumulator * scoreMultiplier); // Á¡¼ö °è»ê
-            timeScore += gained; // Á¡¼ö Áõ°¡
-            timeAccumulator = 0; // ´©Àû ½Ã°£ ÃÊ±âÈ­
-            UpdateScoreText(); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+            int gained = Mathf.FloorToInt(timeAccumulator * scoreMultiplier); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+            timeScore += gained; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            timeAccumulator = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½Ê±ï¿½È­
+            UpdateScoreText(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         }
+    }
+
+    public int GetTotalScore() // ÃÑ Á¡¼ö ¹İÈ¯
+    {
+        return timeScore + itemScore; // ½Ã°£ Á¡¼ö¿Í ¾ÆÀÌÅÛ Á¡¼ö ÇÕ»ê
     }
 
     private void UpdateScoreText()
     {
-        int total = timeScore + itemScore; // ÃÑ Á¡¼ö °è»ê
-        Debug.Log("Total Score: " + total); // µğ¹ö±× ·Î±× Ãâ·Â
-        scoreText.text = "Score: " + total.ToString(); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+        int total = timeScore + itemScore; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+        Debug.Log("Total Score: " + total); // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î±ï¿½ ï¿½ï¿½ï¿½
+        scoreText.text = "Score: " + total.ToString(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 
-        if (total > bestScore) // ÃÖ°í Á¡¼ö °»½Å
+        if (total > bestScore) // ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         {
-            bestScore = total; // ÃÖ°í Á¡¼ö °»½Å
-            PlayerPrefs.SetInt("BestScore", bestScore); // ÀúÀå
-            UpdateBestScoreText(); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+            bestScore = total; // ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            PlayerPrefs.SetInt("BestScore", bestScore); // ï¿½ï¿½ï¿½ï¿½
+            UpdateBestScoreText(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         }
     }
 
     private void UpdateBestScoreText()
     {
-        bestScoreText.text = "Best Score: " + bestScore.ToString(); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+        bestScoreText.text = "Best Score: " + bestScore.ToString(); // UI ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    }
+
+    public void AddItemScore(int bonus) // ì•„ì´í…œ ë¨¹ìœ¼ë©´ ì ìˆ˜ ìƒìŠ¹í•˜ëŠ” ì½”ë“œ
+    {
+        itemScore += bonus;
+        UpdateScoreText();
     }
 }
