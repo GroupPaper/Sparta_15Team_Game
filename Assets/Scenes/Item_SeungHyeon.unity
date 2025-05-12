@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MegaHealthRecovery
       objectReference: {fileID: 0}
+    - target: {fileID: 6202856998431145941, guid: 3aa65a638d66c6643a05b9fd92733a12, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 8611486475177713149, guid: 3aa65a638d66c6643a05b9fd92733a12, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.22
@@ -533,6 +537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedBonus
       objectReference: {fileID: 0}
+    - target: {fileID: 3664327899834815502, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -590,6 +598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MegaScoreBonus
       objectReference: {fileID: 0}
+    - target: {fileID: 7183097368482983136, guid: ba7af38f05dcdeb45ac4a6863a997f07, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -606,6 +618,10 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus
+      objectReference: {fileID: 0}
+    - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
+      propertyPath: m_TagString
+      value: Item
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -704,6 +720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MegaSpeedBonus
       objectReference: {fileID: 0}
+    - target: {fileID: 3712002326099445095, guid: 8ec3b8f50d1d24d41a378ce8b86c9b0d, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -760,6 +780,14 @@ PrefabInstance:
     - target: {fileID: 2042612518710103936, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
       propertyPath: m_Name
       value: HealthRecovery
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042612518710103936, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042612518710103936, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
+      propertyPath: m_TagString
+      value: Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

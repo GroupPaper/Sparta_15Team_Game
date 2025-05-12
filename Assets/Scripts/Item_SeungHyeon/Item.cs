@@ -24,28 +24,29 @@ public class Item : MonoBehaviour
         switch (itemEffect)
         {
             case ItemEffectType.Heal:
-            player.HealFromItem(10f); // 스태틱 처리 필요함
-            break;
+                player.HealFromItem(10f); // 스태틱 처리 필요함
+                break;
 
             case ItemEffectType.MegaHeal:
-            player.HealFromItem(30f);
-            break;
+                player.HealFromItem(30f);
+                break;
 
-        case ItemEffectType.Speed:
-            player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가
-            break;
+            case ItemEffectType.Speed:
+                player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가
+                break;
 
-        case ItemEffectType.MegaSpeed:
-            player.ApplySpeedBuffFromItem(10f, 5f); // 5초동안 이동속도 10 증가
-            break;
+            case ItemEffectType.MegaSpeed:
+                player.ApplySpeedBuffFromItem(10f, 5f); // 5초동안 이동속도 10 증가
+                break;
 
-        case ItemEffectType.Score:
-            player.AddScoreFromItem(100);
-            break;
+            case ItemEffectType.Score:
+                player.AddScoreFromItem(100);
+                break;
 
-        case ItemEffectType.MegaScore:
-            player.AddScoreFromItem(300);
-            break;
-        };
+            case ItemEffectType.MegaScore:
+                player.AddScoreFromItem(300);
+                break;
+        }
+        ;
     }
 }
