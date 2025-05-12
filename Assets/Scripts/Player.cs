@@ -181,4 +181,10 @@ public class Player : MonoBehaviour
     {
         scoreManager.AddItemScore(score);
     }
+
+    public void TakeDamage(int damage)
+    {
+        if (currentHP != null)
+            currentHP.Damege(damage);
+    }
 }

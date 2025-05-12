@@ -16,6 +16,7 @@ public class HPBar : MonoBehaviour
     public float hpDecreaseRatePerSec = 5f; // 체력 감소 속도
 
     private bool isHealing = false; // 체력 회복 효과 딜레이시 사용
+    private bool isDamage = false;
 
     void Start()
     {
@@ -48,6 +49,19 @@ public class HPBar : MonoBehaviour
     public void Heal(float healValue) // 체력 회복 아이템 사용
     {
         StartCoroutine(HealWithDelay(healValue));
+    }
+    public void Damege(float damage) // 피격 데미지
+    {
+        StartCoroutine(DamegeDelay(damage));
+    }
+
+    private IEnumerator DamegeDelay(float damage) // 체력바 변화와 안겹치게 코루틴 사용
+    {
+        isDamage = true;
+        currentHP = Mathf.Clamp(currentHP - damage, 0, maxHP);
+        UpdateHPBarUI();
+        yield return new WaitForSeconds(0.1f); // 아주 잠깐 기다려줌
+        isDamage = false;
     }
 
     private IEnumerator HealWithDelay(float healValue) // 체력바 변화와 안겹치게 코루틴 사용

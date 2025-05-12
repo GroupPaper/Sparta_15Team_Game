@@ -4,25 +4,21 @@ using UnityEngine;
 
 public class Obstacle2 : MonoBehaviour
 {
-    public int damage = 0; // 데미지 수치
+    public int damage = 10; // 데미지 수치
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("트리거 충돌 감지: " + collision.gameObject.name);
+
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log($"트리거와 접촉하여 {damage}의 데미지를 입혔습니다.");
-            //플레이어에게 데미지 주는 내용추가 예정
-
-            // if 플레이어 HP 0씨 GameOver 뜨게 예정?
+            Debug.Log("플레이어와 충돌함");
+            Player player = collision.GetComponent<Player>();
+            if (player != null)
+            {
+                player.TakeDamage(damage);
+                Debug.Log("데미지 적용됨");
+            }
         }
     }
-
-/*    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log($"콜라이더와 충돌하여 {damage}의 데미지를 입혔습니다.");
-            //위와 같음
-        }
-    }*/
 }

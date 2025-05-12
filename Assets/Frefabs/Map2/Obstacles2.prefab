@@ -5362,6 +5362,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5605450300935921425}
     m_Modifications:
+    - target: {fileID: 365284935270608909, guid: 26948c32838d8164599759f98df9d0a8, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1122651755612917104, guid: 26948c32838d8164599759f98df9d0a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -5402,9 +5406,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6419696220525198129, guid: 26948c32838d8164599759f98df9d0a8, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6447198655855619122, guid: 26948c32838d8164599759f98df9d0a8, type: 3}
       propertyPath: m_Name
       value: Obstacle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482955485625741759, guid: 26948c32838d8164599759f98df9d0a8, type: 3}
+      propertyPath: damage
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
