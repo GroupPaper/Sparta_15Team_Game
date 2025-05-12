@@ -326,7 +326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemEffect: 0
-  player: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 584058804}
     m_Modifications:
+    - target: {fileID: 5451355225405219190, guid: 3aa65a638d66c6643a05b9fd92733a12, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6202856998431145941, guid: 3aa65a638d66c6643a05b9fd92733a12, type: 3}
       propertyPath: m_Name
       value: MegaHealthRecovery
@@ -533,6 +536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedBonus
       objectReference: {fileID: 0}
+    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -546,6 +553,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 584058804}
     m_Modifications:
+    - target: {fileID: 5502014185728055698, guid: ba7af38f05dcdeb45ac4a6863a997f07, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6792145400948315597, guid: ba7af38f05dcdeb45ac4a6863a997f07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.38
@@ -606,6 +617,10 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -704,6 +719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MegaSpeedBonus
       objectReference: {fileID: 0}
+    - target: {fileID: 8128060708137701769, guid: 8ec3b8f50d1d24d41a378ce8b86c9b0d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -760,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 2042612518710103936, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
       propertyPath: m_Name
       value: HealthRecovery
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

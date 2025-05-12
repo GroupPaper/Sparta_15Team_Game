@@ -1,4 +1,7 @@
 using UnityEngine;
+
+using System.Collections;
+using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour
@@ -9,7 +12,6 @@ public class Player : MonoBehaviour
     private SlideController _slideController; // 슬라이드 컨트롤러
     private Animator jumpAnim; // 점프 애니메이션
     private Animator slideAnim; // 슬라이드 애니메이션
-
     [SerializeField] private float forwardSpeed = 3f; // 기본 속도
     [SerializeField] private float acceleration = 0.1f; // 초당 가속력
     [SerializeField] private float maxSpeed = 10f; // 현재 최고 속도
