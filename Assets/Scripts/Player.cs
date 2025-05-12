@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         if (scoreManager == null)
             scoreManager = FindObjectOfType<ScoreManager>();
 
-        _movementController = new MovementController();
+        _movementController = gameObject.AddComponent<MovementController>();
         _movementController.Init(forwardSpeed, acceleration, maxSpeed);
         
         _jumpController.Init(jumpForce, maxJumpCount);
@@ -89,9 +89,6 @@ public class Player : MonoBehaviour
             {
                 verticalSpeed = 0f;  // 수직 속도 초기화
             }
-
-            transform.position += new Vector3(_movementController.GetCurrentSpeed() * Time.deltaTime, verticalSpeed * Time.deltaTime, 0f);
-            return; // 무적 상태일 때는 나머지 처리 건너뛰기
         }
 
         float xSpeed = _movementController.GetCurrentSpeed();
@@ -120,15 +117,18 @@ public class Player : MonoBehaviour
                 verticalSpeed = jumpForce;
                 SoundManager.Instance.PlaySFX(jumpSfx);
 
-                if (_slideController.IsSliding())
+                if (_slideController.IsSliding() && !isInvincible)
                 {
                     slideObject.SetActive(false);
                     _slideController.EndSlide();
                 }
 
-                runObject.SetActive(false);
-                jumpObject.SetActive(true);
-                Debug.Log("점프 시 verticalSpeed: " + verticalSpeed);
+                if(!isInvincible)
+                {
+                    runObject.SetActive(false);
+                    jumpObject.SetActive(true);
+                    Debug.Log("점프 시 verticalSpeed: " + verticalSpeed);
+                }
             }
         }
 
@@ -141,23 +141,26 @@ public class Player : MonoBehaviour
             verticalSpeed = 0f;
             _jumpController.ResetJump();
             
-            // 점프 애니메이션 끄기
-            jumpObject.SetActive(false);
+            if(!isInvincible)
+            {
+                // 점프 애니메이션 끄기
+                jumpObject.SetActive(false);
 
-            // 달리기/슬라이드 애니메이션은 상태에 따라
-            if (_slideController.IsSliding())
-            {
-                slideObject.SetActive(true);
-                runObject.SetActive(false);
-            }
-            else
-            {
-                runObject.SetActive(true);
-                slideObject.SetActive(false);
+                // 달리기/슬라이드 애니메이션은 상태에 따라
+                if (_slideController.IsSliding())
+                {
+                    slideObject.SetActive(true);
+                    runObject.SetActive(false);
+                }
+                else
+                {
+                    runObject.SetActive(true);
+                    slideObject.SetActive(false);
+                }
             }
         }
 
-        if (jumpAnim != null && jumpObject.activeSelf)
+        if (jumpAnim != null && jumpObject.activeSelf && !isInvincible)
         {
             jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
         }
@@ -178,15 +181,22 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                runObject.SetActive(false);
-                slideObject.SetActive(true);
+                if(!isInvincible)
+                {
+                    runObject.SetActive(false);
+                    slideObject.SetActive(true);
+                }
                 _slideController.TrySlide();
+                
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                slideObject.SetActive(false);
-                runObject.SetActive(true);
+                if(!isInvincible)
+                {
+                    slideObject.SetActive(false);
+                    runObject.SetActive(true);
+                }
                 _slideController.EndSlide();
             }
         }

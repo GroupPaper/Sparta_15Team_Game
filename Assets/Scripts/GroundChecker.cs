@@ -13,7 +13,6 @@ public class GroundChecker : MonoBehaviour
 
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckDistance = 0.05f;
-    // [SerializeField] private float boxThickness = 0.2f;
     [SerializeField] private GameObject runObject;
     [SerializeField] private GameObject jumpObject;
     [SerializeField] private GameObject slideObject;
@@ -38,7 +37,7 @@ public class GroundChecker : MonoBehaviour
         {
             activeObj = slideObject;
         }
-        else if (_jumpController.IsJumping())
+        else if (_jumpController.IsJumping() && !_player.IsInvincible())
         {
             activeObj = jumpObject;
         }
@@ -55,9 +54,7 @@ public class GroundChecker : MonoBehaviour
         Collider2D col = activeObj.GetComponent<Collider2D>();
         if (col == null) return; // 없으면 스킵
 
-        // 박스 사이즈 origin 계산
-        float width = col.bounds.size.x;
-        float extentsY = col.bounds.extents.y;           // 콜라이더 높이의 절반
+          // 콜라이더 높이의 절반
         float originY = col.bounds.min.y + 0.15f;        // 콜라이더 맨 밑(min.y) 바로 아래
         Vector2 boxOrigin = new Vector2(
             _playerTransform.position.x,
@@ -79,6 +76,8 @@ public class GroundChecker : MonoBehaviour
         Debug.DrawLine(bl, br, Color.yellow);
         Debug.DrawLine(tl, bl, Color.yellow);
         Debug.DrawLine(tr, br, Color.yellow);
+
+        Debug.Log("현재 콜라이더 크기: " + col.bounds.size);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
