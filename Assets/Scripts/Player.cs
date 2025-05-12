@@ -3,28 +3,33 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+    private MovementController _movementController = new MovementController(); // 이동 컨트롤러
+    private JumpController _jumpController = new JumpController(); // 점프 컨트롤러
+    private GroundChecker _groundChecker; // 바닥 체크
+    private SlideController _slideController; // 슬라이드 컨트롤러
+    private Animator jumpAnim; // 점프 애니메이션
+    private Animator slideAnim; // 슬라이드 애니메이션
 
-    private MovementController _movementController = new MovementController();
-    private JumpController _jumpController = new JumpController();
-    private GroundChecker _groundChecker;
-    private SlideController _slideController;
-    private Animator jumpAnim;
-    private Animator slideAnim;
+    [SerializeField] private float forwardSpeed = 3f; // 기본 속도
+    [SerializeField] private float acceleration = 0.1f; // 초당 가속력
+    [SerializeField] private float maxSpeed = 10f; // 현재 최고 속도
 
-    [SerializeField] private float forwardSpeed = 3f;
-    [SerializeField] private float acceleration = 0.1f;
-    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float jumpForce = 6f; // 점프 힘
+    [SerializeField] private float gravity = -20f; // 중력
+    [SerializeField] private int maxJumpCount = 2; // 최대 점프 횟수
+   
+    private float verticalSpeed = 0f; // 수직 속도
 
-    [SerializeField] private float jumpForce = 6f;
-    [SerializeField] private float gravity = -20f;
-    [SerializeField] private int maxJumpCount = 2;
+    [SerializeField] private GameObject slideObject; // 슬라이드 오브젝트
+    [SerializeField] private GameObject runObject; // 달리기 오브젝트
+    [SerializeField] private GameObject jumpObject; // 점프 오브젝트
 
-    private float verticalSpeed = 0f;
+    [SerializeField] private AudioClip footStepSfx; // 발소리 SFX
+    [SerializeField] private AudioClip jumpSfx; // 점프 SFX
+    [SerializeField] private AudioClip slideSfx; // 슬라이드 SFX
 
-    [SerializeField] private GameObject slideObject;
-    [SerializeField] private GameObject runObject;
-    [SerializeField] private GameObject jumpObject;
-    
+    private float footstepInterval = 0.4f; // 발소리 간격
+    private float footstepTimer = 0f; // 발소리 타이머
 
     // ApplyItemEffect 중개 메서드
     public HPBar currentHP;
@@ -46,10 +51,27 @@ public class Player : MonoBehaviour
         slideAnim = slideObject.GetComponent<Animator>();
     }
 
+    private bool wasSliding = false; // 슬라이드 상태를 저장하기 위한 변수
+
     void Update()
     {
         float xSpeed = _movementController.GetCurrentSpeed();
         bool isGrounded = _groundChecker.IsGrounded();
+
+        if (isGrounded && xSpeed > 0f && !_slideController.IsSliding())
+        {
+            // 발소리 재생
+            footstepTimer += Time.deltaTime;
+            if (footstepTimer >= footstepInterval)
+            {
+                SoundManager.Instance.PlaySFX(footStepSfx);
+                footstepTimer = 0f;
+            }
+        }
+        else
+        {
+            footstepTimer = footstepInterval; // 발소리 재생 안할 때는 리셋
+        }
 
         // 점프 입력
         if (Input.GetKeyDown(KeyCode.Space))
@@ -57,6 +79,7 @@ public class Player : MonoBehaviour
             if (_jumpController.TryJump())
             {
                 verticalSpeed = jumpForce;
+                SoundManager.Instance.PlaySFX(jumpSfx);
 
                 if (_slideController.IsSliding())
                 {
@@ -102,6 +125,14 @@ public class Player : MonoBehaviour
 
         // 위치 이동
         transform.position += new Vector3(xSpeed * Time.deltaTime, verticalSpeed * Time.deltaTime, 0f);
+
+        bool isSliding = _slideController.IsSliding();
+
+        if (isSliding && !wasSliding)
+        {
+            SoundManager.Instance.PlaySFX(slideSfx);
+        }
+        wasSliding = isSliding;
 
         // 슬라이딩 입력 처리 (점프 중일 땐 슬라이딩 금지)
         if (!_jumpController.IsJumping())
