@@ -47,10 +47,10 @@ public class GroundChecker : MonoBehaviour
         Collider2D col = activeObj.GetComponent<Collider2D>();
         if (col == null) return; // 없으면 스킵
 
-        // 박스 사이즈, origin 계산
+        // 박스 사이즈 origin 계산
         float width = col.bounds.size.x;
         float extentsY = col.bounds.extents.y;           // 콜라이더 높이의 절반
-        float originY = col.bounds.min.y - 0.01f;        // 콜라이더 맨 밑(min.y) 바로 아래
+        float originY = col.bounds.min.y - -0.15f;        // 콜라이더 맨 밑(min.y) 바로 아래
         Vector2 boxOrigin = new Vector2(
             _playerTransform.position.x,
             originY

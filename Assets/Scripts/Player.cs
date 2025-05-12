@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class Player : MonoBehaviour
     private JumpController _jumpController = new JumpController();
     private GroundChecker _groundChecker;
     private SlideController _slideController;
+    private Animator jumpAnim;
+    private Animator slideAnim;
 
     [SerializeField] private float forwardSpeed = 3f;
     [SerializeField] private float acceleration = 0.1f;
@@ -38,6 +41,9 @@ public class Player : MonoBehaviour
 
         _groundChecker = GetComponent<GroundChecker>();
         _groundChecker.Init(_jumpController, _slideController, transform);
+
+        jumpAnim = jumpObject.GetComponent<Animator>();
+        slideAnim = slideObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -89,6 +95,8 @@ public class Player : MonoBehaviour
             }
         }
 
+        jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
+
         // 위치 이동
         transform.position += new Vector3(xSpeed * Time.deltaTime, verticalSpeed * Time.deltaTime, 0f);
 
@@ -99,11 +107,13 @@ public class Player : MonoBehaviour
             {
                 runObject.SetActive(false);
                 slideObject.SetActive(true);
+                slideAnim.SetBool("isSliding", true);
                 _slideController.TrySlide();
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
+                slideAnim.SetBool("isSliding", false);
                 slideObject.SetActive(false);
                 runObject.SetActive(true);
                 _slideController.EndSlide();
