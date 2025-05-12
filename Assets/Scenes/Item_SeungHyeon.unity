@@ -780,6 +780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery
       objectReference: {fileID: 0}
+    - target: {fileID: 7793247951336387965, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
       propertyPath: m_IsTrigger
       value: 1
