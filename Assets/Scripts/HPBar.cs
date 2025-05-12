@@ -49,6 +49,17 @@ public class HPBar : MonoBehaviour
     {
         StartCoroutine(HealWithDelay(healValue));
     }
+    public void Damage(float damage) // 피격 데미지
+    {
+        StartCoroutine(DamegeDelay(damage));
+    }
+
+    private IEnumerator DamegeDelay(float damage) // 체력바 변화와 안겹치게 코루틴 사용
+    {
+        currentHP = Mathf.Clamp(currentHP - damage, 1, maxHP);
+        UpdateHPBarUI();
+        yield return new WaitForSeconds(0.1f); // 아주 잠깐 기다려줌
+    }
 
     private IEnumerator HealWithDelay(float healValue) // 체력바 변화와 안겹치게 코루틴 사용
     {

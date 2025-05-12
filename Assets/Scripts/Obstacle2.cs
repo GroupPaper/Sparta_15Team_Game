@@ -4,25 +4,34 @@ using UnityEngine;
 
 public class Obstacle2 : MonoBehaviour
 {
-    public int damage = 0; // ë°ë¯¸ì§€ ìˆ˜ì¹˜
+    public float damage = 10f; // µ¥¹ÌÁö ¼öÄ¡
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Ãæµ¹ÇÑ ¿ÀºêÁ§Æ®: " + collision.gameObject.name);  // Ãæµ¹ÇÑ °´Ã¼ ÀÌ¸§ È®ÀÎ
+        Debug.Log("Ãæµ¹ÇÑ °´Ã¼ÀÇ ÅÂ±×: " + collision.gameObject.tag);  // Ãæµ¹ÇÑ °´Ã¼ÀÇ ÅÂ±× È®ÀÎ
+
+        // Player ÅÂ±×¸¦ °¡Áø °´Ã¼°¡ Ãæµ¹ÇßÀ» ¶§
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log($"íŠ¸ë¦¬ê±°ì™€ ì ‘ì´‰í•˜ì—¬ {damage}ì˜ ë°ë¯¸ì§€ë¥¼ ì…í˜”ìŠµë‹ˆë‹¤.");
-            //í”Œë ˆì´ì–´ì—ê²Œ ë°ë¯¸ì§€ ì£¼ëŠ” ë‚´ìš©ì¶”ê°€ ì˜ˆì •
+            Debug.Log("ÇÃ·¹ÀÌ¾î¿Í Ãæµ¹ÇÔ");
 
-            // if í”Œë ˆì´ì–´ HP 0ì”¨ GameOver ëœ¨ê²Œ ì˜ˆì •?
+            // ºÎ¸ğ ¿ÀºêÁ§Æ®¿¡¼­ Player ÄÄÆ÷³ÍÆ® °¡Á®¿À±â
+            Player player = collision.transform.parent.GetComponent<Player>();
+
+            if (player != null)
+            {
+                player.TakeDamage(damage);
+                Debug.Log("µ¥¹ÌÁö Àû¿ëµÊ" + damage);
+            }
+            else
+            {
+                Debug.LogWarning("Player ÄÄÆ÷³ÍÆ®¸¦ Ã£Áö ¸øÇß½À´Ï´Ù!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("ÇÃ·¹ÀÌ¾î°¡ ¾Æ´Ñ ¿ÀºêÁ§Æ®¿Í Ãæµ¹Çß½À´Ï´Ù.");
         }
     }
-
-/*    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log($"ì½œë¼ì´ë”ì™€ ì¶©ëŒí•˜ì—¬ {damage}ì˜ ë°ë¯¸ì§€ë¥¼ ì…í˜”ìŠµë‹ˆë‹¤.");
-            //ìœ„ì™€ ê°™ìŒ
-        }
-    }*/
 }
