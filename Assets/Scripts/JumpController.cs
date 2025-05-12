@@ -177,7 +177,7 @@ public class JumpController
     private float jumpPower;
     private int maxJumpCount;
     private int currentJumpCount;
-    private float jumpDisplacement;
+    // private float jumpDisplacement;
     private bool isJumping = false;
 
     public int JumpCount => currentJumpCount;
@@ -188,7 +188,7 @@ public class JumpController
         this.jumpPower = jumpPower;
         this.maxJumpCount = maxJumpCount;
         currentJumpCount = 0;
-        jumpDisplacement = 0f;
+        // jumpDisplacement = 0f;
         isJumping = false;
     }
 
@@ -196,7 +196,7 @@ public class JumpController
     {
         if (currentJumpCount < maxJumpCount)
         {
-            jumpDisplacement = jumpPower;
+            // jumpDisplacement = jumpPower;
             currentJumpCount++;
             isJumping = true;
             return true;
@@ -204,17 +204,17 @@ public class JumpController
         return false;
     }
 
-    public float GetJumpDisplacement()
-    {
-        float displacement = jumpDisplacement;
-        jumpDisplacement = 0f;
-        return displacement;
-    }
+    // public float GetJumpDisplacement()
+    // {
+    //     float displacement = jumpDisplacement;
+    //     jumpDisplacement = 0f;
+    //     return displacement;
+    // }
 
     public void ResetJump()
     {
         currentJumpCount = 0;
-        jumpDisplacement = 0f;
+        // jumpDisplacement = 0f;
         isJumping = false;
     }
 }
