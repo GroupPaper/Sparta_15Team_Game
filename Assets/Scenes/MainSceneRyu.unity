@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b62f445dc207f04f93333d32b353a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfx: {fileID: 8300000, guid: 5d0cab5e26a48204391a138f1504807c, type: 3}
 --- !u!4 &73059209
 Transform:
   m_ObjectHideFlags: 0
@@ -1080,6 +1081,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718144726}
   m_CullTransparentMesh: 1
+--- !u!1 &788828005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788828007}
+  - component: {fileID: 788828006}
+  m_Layer: 0
+  m_Name: BGMPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &788828006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788828005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7eae5490301ec14c90688eaf62bd07d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmClip: {fileID: 8300000, guid: 399e80709f0d9af4cb00a4d3d2bc4cda, type: 3}
+--- !u!4 &788828007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788828005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &910304499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,8 +1860,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2748,7 +2794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBar: {fileID: 1853190891}
-  maxHP: 100
+  maxHP: 20
   hpDecreaseRatePerSec: 5
 --- !u!114 &1853190891
 MonoBehaviour:
@@ -2965,6 +3011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1965808891}
+  gameOverBgm: {fileID: 8300000, guid: 5b5e44c313d2f754b84c835aac35f6ee, type: 3}
 --- !u!4 &1961594301
 Transform:
   m_ObjectHideFlags: 0
@@ -3327,3 +3374,4 @@ SceneRoots:
   - {fileID: 636632591}
   - {fileID: 1561299307}
   - {fileID: 1014220999}
+  - {fileID: 788828007}
