@@ -123,37 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &347849826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 347849827}
-  m_Layer: 0
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &347849827
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347849826}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1298694767}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390369526
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +369,7 @@ GameObject:
   - component: {fileID: 576873692}
   - component: {fileID: 576873694}
   - component: {fileID: 576873693}
+  - component: {fileID: 576873695}
   m_Layer: 0
   m_Name: RunSprite
   m_TagString: Untagged
@@ -519,6 +489,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &576873695
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576873691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ccd2594f4eb6478d84b72101122bf1f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1298694765
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +545,6 @@ Transform:
   - {fileID: 576873692}
   - {fileID: 1551010827}
   - {fileID: 1699188557}
-  - {fileID: 347849827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1298694769
@@ -602,7 +592,6 @@ MonoBehaviour:
   jumpForce: 6
   gravity: -20
   maxJumpCount: 2
-  groundCheck: {fileID: 347849827}
   slideObject: {fileID: 1699188556}
   runObject: {fileID: 576873691}
   jumpObject: {fileID: 1551010826}
@@ -620,10 +609,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be41e43bf5cd94c7da8efc3d92d834ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheckDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
+  groundCheckDistance: 0.2
+  boxThickness: 0.2
+  runObject: {fileID: 576873691}
+  jumpObject: {fileID: 1551010826}
+  slideObject: {fileID: 1699188556}
 --- !u!1 &1401766614
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +706,7 @@ GameObject:
   - component: {fileID: 1551010827}
   - component: {fileID: 1551010828}
   - component: {fileID: 1551010829}
+  - component: {fileID: 1551010830}
   m_Layer: 0
   m_Name: JumpSprite
   m_TagString: Untagged
@@ -832,6 +826,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5625, y: 2.375}
   m_EdgeRadius: 0
+--- !u!95 &1551010830
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551010826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31742b3a5834b44278b00c3f5efc9c0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1699188556
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +858,7 @@ GameObject:
   - component: {fileID: 1699188557}
   - component: {fileID: 1699188559}
   - component: {fileID: 1699188558}
+  - component: {fileID: 1699188560}
   m_Layer: 0
   m_Name: SlideSprite
   m_TagString: Untagged
@@ -962,6 +978,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1699188560
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699188556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed5923afa906140649ffeb8ea4dddc3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
