@@ -1,4 +1,7 @@
 using UnityEngine;
+
+using System.Collections;
+using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour
@@ -10,6 +13,8 @@ public class Player : MonoBehaviour
     private SlideController _slideController;
     private Animator jumpAnim;
     private Animator slideAnim;
+    private bool isInvincible = false;
+    public bool IsInvincible => isInvincible;
 
     [SerializeField] private float forwardSpeed = 3f;
     [SerializeField] private float acceleration = 0.1f;
@@ -141,6 +146,19 @@ public class Player : MonoBehaviour
     public void ApplySpeedBuffFromItem(float bonus, float duration)
     {
         movementController.ApplySpeedItemBuff(bonus, duration);
+        StartCoroutine(EnableInvincibility(duration));
+    }
+
+    private IEnumerator EnableInvincibility(float duration)
+    {
+        isInvincible = true;
+
+        gameObject.layer = LayerMask.NameToLayer("Invincible"); // 무적 상태로 레이어 마스크 변경
+
+        yield return new WaitForSeconds(duration);
+
+        gameObject.layer = LayerMask.NameToLayer("Player"); // 다시 원상태로 변경하여 충돌처리
+        isInvincible = false;
     }
 
     public void AddScoreFromItem(int score)
