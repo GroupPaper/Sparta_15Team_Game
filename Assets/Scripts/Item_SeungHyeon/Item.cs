@@ -32,7 +32,7 @@ public class Item : MonoBehaviour
             break;
 
         case ItemEffectType.Speed:
-            player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가가
+            player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가
             break;
 
         case ItemEffectType.MegaSpeed:
