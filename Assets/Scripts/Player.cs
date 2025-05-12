@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private GroundChecker _groundChecker;
     private SlideController _slideController;
     private Animator jumpAnim;
+    private Animator slideAnim;
 
     [SerializeField] private float forwardSpeed = 3f;
     [SerializeField] private float acceleration = 0.1f;
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject slideObject;
     [SerializeField] private GameObject runObject;
     [SerializeField] private GameObject jumpObject;
+    
 
     // ApplyItemEffect 중개 메서드
     public HPBar currentHP;
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         _groundChecker.Init(_jumpController, _slideController, transform);
 
         jumpAnim = jumpObject.GetComponent<Animator>();
+        slideAnim = slideObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -48,17 +51,12 @@ public class Player : MonoBehaviour
         float xSpeed = _movementController.GetCurrentSpeed();
         bool isGrounded = _groundChecker.IsGrounded();
 
-        // 점프 조절
-        float speedRatio = xSpeed / maxSpeed;
-        float adjustedJumpForce = Mathf.Lerp(jumpForce, jumpForce * 1.5f, speedRatio);
-        float adjustedGravity = Mathf.Lerp(gravity, gravity * 1.5f, speedRatio);
-
         // 점프 입력
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (_jumpController.TryJump())
             {
-                verticalSpeed = adjustedJumpForce; // 속도비례 점프
+                verticalSpeed = jumpForce;
 
                 if (_slideController.IsSliding())
                 {
@@ -73,7 +71,7 @@ public class Player : MonoBehaviour
         }
 
         // 중력 적용
-        verticalSpeed += adjustedGravity * Time.deltaTime; // 속도비례 중력
+        verticalSpeed += gravity * Time.deltaTime;
 
         // 수직 속도 리셋
         if (isGrounded && verticalSpeed < 0f)
@@ -124,12 +122,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.CompareTag("Obstacle"))
-        {
-            Debug.Log("장애물 충돌");
-        }
+        Debug.Log("플레이어 충돌 발생: " + collision.gameObject.name);
+        _groundChecker.OnCollisionEnter2D(collision);
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        _groundChecker.OnCollisionExit2D(collision);
     }
 
     // ApplyItemEffect 중개 메서드
