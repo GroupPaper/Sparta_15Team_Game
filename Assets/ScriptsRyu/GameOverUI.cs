@@ -7,24 +7,24 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameOverUI : MonoBehaviour
 {
-    public GameObject gameOverPanel; // °ÔÀÓ ¿À¹ö ÆĞ³Î
-    public TextMeshProUGUI finalScoreText; // ÃÖÁ¾ Á¡¼ö ÅØ½ºÆ®
-    public TextMeshProUGUI finalTimeText; // ÃÖÁ¾ ½Ã°£ ÅØ½ºÆ®
+    public GameObject gameOverPanel; // ê²Œì„ ì˜¤ë²„ íŒ¨ë„
+    public TextMeshProUGUI finalScoreText; // ìµœì¢… ì ìˆ˜ í…ìŠ¤íŠ¸
+    public TextMeshProUGUI finalTimeText; // ìµœì¢… ì‹œê°„ í…ìŠ¤íŠ¸
 
     private void Start()
     {
-        gameOverPanel.SetActive(false); // °ÔÀÓ ¿À¹ö ÆĞ³Î ºñÈ°¼ºÈ­
+        gameOverPanel.SetActive(false); // ê²Œì„ ì˜¤ë²„ íŒ¨ë„ ë¹„í™œì„±í™”
     }
 
     public void ShowGameOverPanel(int score, float elapsedTime)
     {
         Time.timeScale = 0f;
 
-        // 2) ÃÖÁ¾ Á¡¼ö¡¤½Ã°£ ÅØ½ºÆ® ¼³Á¤
-        finalScoreText.text = $"Score: {score}"; // ÃÖÁ¾ Á¡¼ö Ç¥½Ã
-        int m = Mathf.FloorToInt(elapsedTime / 60f); // ºĞ °è»ê
-        int s = Mathf.FloorToInt(elapsedTime % 60f); // ÃÊ °è»ê
-        finalTimeText.text = $"{m:D2}:{s:D2}"; // ÃÖÁ¾ ½Ã°£ Ç¥½Ã
+        // 2) ìµœì¢… ì ìˆ˜Â·ì‹œê°„ í…ìŠ¤íŠ¸ ì„¤ì •
+        finalScoreText.text = $"Score: {score}"; // ìµœì¢… ì ìˆ˜ í‘œì‹œ
+        int m = Mathf.FloorToInt(elapsedTime / 60f); // ë¶„ ê³„ì‚°
+        int s = Mathf.FloorToInt(elapsedTime % 60f); // ì´ˆ ê³„ì‚°
+        finalTimeText.text = $"{m:D2}:{s:D2}"; // ìµœì¢… ì‹œê°„ í‘œì‹œ
 
         gameOverPanel.SetActive(true);
     }

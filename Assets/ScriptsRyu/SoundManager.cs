@@ -5,21 +5,21 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager Instance; // ½Ì±ÛÅæ ÀÎ½ºÅÏ½º
+    public static SoundManager Instance; // ì‹±ê¸€í†¤ ì¸ìŠ¤í„´ìŠ¤
 
-    public AudioSource bgmSource; // BGM ¼Ò½º
-    public AudioSource sfxSource; // SFX ¼Ò½º
+    public AudioSource bgmSource; // BGM ì†ŒìŠ¤
+    public AudioSource sfxSource; // SFX ì†ŒìŠ¤
 
     private void Awake()
     {
         if (Instance == null)
         {
-            Instance = this; // ½Ì±ÛÅæ ÀÎ½ºÅÏ½º ¼³Á¤
-            DontDestroyOnLoad(gameObject); // ¾À ÀüÈ¯ ½Ã ÆÄ±«µÇÁö ¾Êµµ·Ï ¼³Á¤
+            Instance = this; // ì‹±ê¸€í†¤ ì¸ìŠ¤í„´ìŠ¤ ì„¤ì •
+            DontDestroyOnLoad(gameObject); // ì”¬ ì „í™˜ ì‹œ íŒŒê´´ë˜ì§€ ì•Šë„ë¡ ì„¤ì •
         }
         else
         {
-            Destroy(gameObject); // ÀÌ¹Ì Á¸ÀçÇÏ´Â ÀÎ½ºÅÏ½º°¡ ÀÖÀ¸¸é ÆÄ±«
+            Destroy(gameObject); // ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ê°€ ìˆìœ¼ë©´ íŒŒê´´
         }
     }
 
@@ -27,24 +27,24 @@ public class SoundManager : MonoBehaviour
     {
         if (clip == null)
         {
-            return; // Å¬¸³ÀÌ nullÀÌ¸é ¾Æ¹«°Íµµ ÇÏÁö ¾ÊÀ½
+            return; // í´ë¦½ì´ nullì´ë©´ ì•„ë¬´ê²ƒë„ í•˜ì§€ ì•ŠìŒ
         }
-        bgmSource.clip = clip; // BGM ¼Ò½º¿¡ Å¬¸³ ¼³Á¤
-        bgmSource.loop = loop; // ·çÇÁ ¼³Á¤
-        bgmSource.Play(); // BGM Àç»ı
+        bgmSource.clip = clip; // BGM ì†ŒìŠ¤ì— í´ë¦½ ì„¤ì •
+        bgmSource.loop = loop; // ë£¨í”„ ì„¤ì •
+        bgmSource.Play(); // BGM ì¬ìƒ
     }
 
     public void StopBGM()
     {
-        bgmSource.Stop(); // BGM Á¤Áö
+        bgmSource.Stop(); // BGM ì •ì§€
     }
 
     public void PlaySFX(AudioClip clip)
     {
         if (clip == null)
         {
-            return; // Å¬¸³ÀÌ nullÀÌ¸é ¾Æ¹«°Íµµ ÇÏÁö ¾ÊÀ½
+            return; // í´ë¦½ì´ nullì´ë©´ ì•„ë¬´ê²ƒë„ í•˜ì§€ ì•ŠìŒ
         }
-        sfxSource.PlayOneShot(clip); // SFX Àç»ı
+        sfxSource.PlayOneShot(clip); // SFX ì¬ìƒ
     }
 }

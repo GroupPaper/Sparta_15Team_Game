@@ -1,8 +1,5 @@
-using UnityEngine;
-
 using System.Collections;
 using UnityEngine;
-using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -180,5 +177,11 @@ public class Player : MonoBehaviour
     public void AddScoreFromItem(int score)
     {
         scoreManager.AddItemScore(score);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        if (currentHP != null)
+            currentHP.Damage(damage);
     }
 }

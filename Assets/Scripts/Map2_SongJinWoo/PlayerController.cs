@@ -1,10 +1,10 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject body; // Body ¿ÀºêÁ§Æ® (¾Ö´Ï¸ŞÀÌ¼Ç¿ë)
+    public GameObject body; // Body ì˜¤ë¸Œì íŠ¸ (ì• ë‹ˆë©”ì´ì…˜ìš©)
     public float moveSpeed = 3f;
     public float jumpForce = 5f;
 
@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private int jumpCount = 0;
     private bool isGrounded = false;
-    private bool isisSliding = false; // ½½¶óÀÌµå ¿©ºÎ
+    private bool isisSliding = false; // ìŠ¬ë¼ì´ë“œ ì—¬ë¶€
 
     void Start()
     {
@@ -23,10 +23,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Ç×»ó ¿À¸¥ÂÊÀ¸·Î ÀÌµ¿
+        // í•­ìƒ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì´ë™
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
-        // Á¡ÇÁ ÀÔ·Â Ã³¸®
+        // ì í”„ ì…ë ¥ ì²˜ë¦¬
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
@@ -42,28 +42,28 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // ½½¶óÀÌµå ÀÔ·Â Ã³¸®
-        if (Input.GetKey(KeyCode.LeftShift)) // ½½¶óÀÌµå Å°¸¦ ´©¸£°í ÀÖÀ» ¶§
+        // ìŠ¬ë¼ì´ë“œ ì…ë ¥ ì²˜ë¦¬
+        if (Input.GetKey(KeyCode.LeftShift)) // ìŠ¬ë¼ì´ë“œ í‚¤ë¥¼ ëˆ„ë¥´ê³  ìˆì„ ë•Œ
         {
             isisSliding = true;
-            animator.SetBool("isSliding", true); // ½½¶óÀÌµå ¾Ö´Ï¸ŞÀÌ¼Ç Àç»ı
+            animator.SetBool("isSliding", true); // ìŠ¬ë¼ì´ë“œ ì• ë‹ˆë©”ì´ì…˜ ì¬ìƒ
         }
         else
         {
             isisSliding = false;
-            animator.SetBool("isSliding", false); // ½½¶óÀÌµå ¾Ö´Ï¸ŞÀÌ¼Ç ¸ØÃã
+            animator.SetBool("isSliding", false); // ìŠ¬ë¼ì´ë“œ ì• ë‹ˆë©”ì´ì…˜ ë©ˆì¶¤
         }
 
-        // ¾Ö´Ï¸ŞÀÌ¼Ç Ã³¸® (ÇÊ¿ä½Ã)
+        // ì• ë‹ˆë©”ì´ì…˜ ì²˜ë¦¬ (í•„ìš”ì‹œ)
         animator.SetInteger("jumpCount", jumpCount);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.contacts[0].normal.y > 0.5f) // ¹Ù´Ú°ú Ãæµ¹
+        if (collision.contacts[0].normal.y > 0.5f) // ë°”ë‹¥ê³¼ ì¶©ëŒ
         {
             isGrounded = true;
             jumpCount = 0;
         }
     }
-}
+}*/

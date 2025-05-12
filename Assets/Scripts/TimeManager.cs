@@ -5,22 +5,22 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    public TextMeshProUGUI timeText; // UI ÅØ½ºÆ® ÄÄÆ÷³ÍÆ®
-    private float elapsedTime = 0f; // °æ°ú ½Ã°£
-    public bool isRunning = true; // Å¸ÀÌ¸Ó ½ÇÇà ¿©ºÎ
+    public TextMeshProUGUI timeText; // UI í…ìŠ¤íŠ¸ ì»´í¬ë„ŒíŠ¸
+    private float elapsedTime = 0f; // ê²½ê³¼ ì‹œê°„
+    public bool isRunning = true; // íƒ€ì´ë¨¸ ì‹¤í–‰ ì—¬ë¶€
 
     private void Update()
     {
-        if(!isRunning) return; // Å¸ÀÌ¸Ó°¡ ½ÇÇà ÁßÀÌ ¾Æ´Ò °æ¿ì ¾÷µ¥ÀÌÆ® ÇÏÁö ¾ÊÀ½
+        if(!isRunning) return; // íƒ€ì´ë¨¸ê°€ ì‹¤í–‰ ì¤‘ì´ ì•„ë‹ ê²½ìš° ì—…ë°ì´íŠ¸ í•˜ì§€ ì•ŠìŒ
 
-        elapsedTime += Time.deltaTime; // °æ°ú ½Ã°£ Áõ°¡
-        int minutes = Mathf.FloorToInt(elapsedTime / 60); // ºĞ °è»ê
-        int seconds = Mathf.FloorToInt(elapsedTime % 60); // ÃÊ °è»ê
-        timeText.text = string.Format("{0:D2}:{1:D2}", minutes, seconds); // UI ÅØ½ºÆ® ¾÷µ¥ÀÌÆ®
+        elapsedTime += Time.deltaTime; // ê²½ê³¼ ì‹œê°„ ì¦ê°€
+        int minutes = Mathf.FloorToInt(elapsedTime / 60); // ë¶„ ê³„ì‚°
+        int seconds = Mathf.FloorToInt(elapsedTime % 60); // ì´ˆ ê³„ì‚°
+        timeText.text = string.Format("{0:D2}:{1:D2}", minutes, seconds); // UI í…ìŠ¤íŠ¸ ì—…ë°ì´íŠ¸
     }
 
-    public float GetElapsedTime() // °æ°ú ½Ã°£ ¹İÈ¯
+    public float GetElapsedTime() // ê²½ê³¼ ì‹œê°„ ë°˜í™˜
     {
-        return elapsedTime; // °æ°ú ½Ã°£ ¹İÈ¯
+        return elapsedTime; // ê²½ê³¼ ì‹œê°„ ë°˜í™˜
     }
 }
