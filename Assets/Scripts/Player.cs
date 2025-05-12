@@ -1,25 +1,30 @@
 using UnityEngine;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
 
     private MovementController _movementController = new MovementController();
     private JumpController _jumpController = new JumpController();
-    private GroundChecker _groundChecker = new GroundChecker();
-    private SlideController _slideController = new SlideController();
-
-    private bool isJumping = false;
+    private GroundChecker _groundChecker;
+    private SlideController _slideController;
+    private Animator jumpAnim;
+    private Animator slideAnim;
 
     [SerializeField] private float forwardSpeed = 3f;
     [SerializeField] private float acceleration = 0.1f;
     [SerializeField] private float maxSpeed = 10f;
 
     [SerializeField] private float jumpForce = 6f;
+    [SerializeField] private float gravity = -20f;
     [SerializeField] private int maxJumpCount = 2;
+
+    private float verticalSpeed = 0f;
 
     [SerializeField] private GameObject slideObject;
     [SerializeField] private GameObject runObject;
     [SerializeField] private GameObject jumpObject;
+    
 
     // ApplyItemEffect 중개 메서드
     public HPBar currentHP;
@@ -30,60 +35,95 @@ public class Player : MonoBehaviour
     {
         _movementController.Init(forwardSpeed, acceleration, maxSpeed);
         _jumpController.Init(jumpForce, maxJumpCount);
-        _groundChecker.Init(_jumpController);
+
+        _slideController = gameObject.AddComponent<SlideController>();
         _slideController.Init(_jumpController);
+
+        _groundChecker = GetComponent<GroundChecker>();
+        _groundChecker.Init(_jumpController, _slideController, transform);
+
+        jumpAnim = jumpObject.GetComponent<Animator>();
+        slideAnim = slideObject.GetComponent<Animator>();
     }
 
     void Update()
     {
         float xSpeed = _movementController.GetCurrentSpeed();
-        bool isGrounded = _groundChecker.IsGrounded(); // 바닥 여부 확인
+        bool isGrounded = _groundChecker.IsGrounded();
 
-        float yDisplacement = _jumpController.GetJumpDisplacement() * Time.deltaTime;
-        transform.position += new Vector3(xSpeed * Time.deltaTime, yDisplacement, 0f);
-
-        if (Input.GetKeyDown(KeyCode.Space)) // 슬라이딩 중에도 점프 가능
+        // 점프 입력
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            isJumping = true;
-
-            // 슬라이딩 중이라면 슬라이딩을 취소하고 점프 시작
-            if (_slideController.IsSliding())
+            if (_jumpController.TryJump())
             {
-                slideObject.SetActive(false);
-                Debug.Log("슬라이드 취소");
-                _slideController.EndSlide();
-            }
+                verticalSpeed = jumpForce;
 
-            runObject.SetActive(false);
-            jumpObject.SetActive(true);
-            Debug.Log("점프");
-            _jumpController.TryJump();
+                if (_slideController.IsSliding())
+                {
+                    slideObject.SetActive(false);
+                    _slideController.EndSlide();
+                }
+
+                runObject.SetActive(false);
+                jumpObject.SetActive(true);
+                Debug.Log("점프 시 verticalSpeed: " + verticalSpeed);
+            }
         }
 
-        if (!isJumping)
+        // 중력 적용
+        verticalSpeed += gravity * Time.deltaTime;
+
+        // 수직 속도 리셋
+        if (isGrounded && verticalSpeed < 0f)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && !_jumpController.IsJumping()) // 점프 중에는 슬라이딩 시작 안됨
+            verticalSpeed = 0f;
+            _jumpController.ResetJump();
+            
+            // 점프 애니메이션 끄기
+            jumpObject.SetActive(false);
+
+            // 달리기/슬라이드 애니메이션은 상태에 따라
+            if (_slideController.IsSliding())
+            {
+                slideObject.SetActive(true);
+                runObject.SetActive(false);
+            }
+            else
+            {
+                runObject.SetActive(true);
+                slideObject.SetActive(false);
+            }
+        }
+
+        jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
+
+        // 위치 이동
+        transform.position += new Vector3(xSpeed * Time.deltaTime, verticalSpeed * Time.deltaTime, 0f);
+
+        // 슬라이딩 입력 처리 (점프 중일 땐 슬라이딩 금지)
+        if (!_jumpController.IsJumping())
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 runObject.SetActive(false);
                 slideObject.SetActive(true);
-            }
-
-            if (Input.GetKey(KeyCode.LeftShift) && !_jumpController.IsJumping()) // 슬라이딩 중일 때 슬라이딩 액션
-            {
+                slideAnim.SetBool("isSliding", true);
                 _slideController.TrySlide();
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift)) // 쉬프트 떼면 슬라이딩 종료
+            if (Input.GetKeyUp(KeyCode.LeftShift))
             {
+                slideAnim.SetBool("isSliding", false);
                 slideObject.SetActive(false);
                 runObject.SetActive(true);
-                _slideController.EndSlide(); // 슬라이딩 종료
+                _slideController.EndSlide();
             }
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("플레이어 충돌 발생: " + collision.gameObject.name);
         _groundChecker.OnCollisionEnter2D(collision);
     }
 
