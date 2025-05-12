@@ -173,7 +173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemEffect: 0
-  player: {fileID: 0}
 --- !u!95 &2383813407674000369
 Animator:
   serializedVersion: 5

@@ -11,12 +11,13 @@ public class Item : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other) // 캐릭터가 아이템이랑 충돌하는 경우
     {
-        Player player = other.GetComponent<Player>();
-        if(other.CompareTag("Player"))
+        Player player = other.GetComponentInParent<Player>();
+        if (player != null)
         {
-            ApplyItemEffect(player); // 플레이어에게 아이템 효과를 적용한다.
-            Destroy(gameObject); // 아이템 제거
+            ApplyItemEffect(player);
+            Destroy(gameObject);
         }
+        Debug.Log("Player를 찾을 수 없습니다.");
     }
 
     private void ApplyItemEffect(Player player)
