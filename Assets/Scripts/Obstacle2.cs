@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Obstacle2 : MonoBehaviour
 {
-    public int damage = 0; // µ¥¹ÌÁö ¼öÄ¡
+    public int damage = 0; // ë°ë¯¸ì§€ ìˆ˜ì¹˜
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log($"Æ®¸®°Å¿Í Á¢ÃËÇÏ¿© {damage}ÀÇ µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù.");
-            //ÇÃ·¹ÀÌ¾î¿¡°Ô µ¥¹ÌÁö ÁÖ´Â ³»¿ëÃß°¡ ¿¹Á¤
+            Debug.Log($"íŠ¸ë¦¬ê±°ì™€ ì ‘ì´‰í•˜ì—¬ {damage}ì˜ ë°ë¯¸ì§€ë¥¼ ì…í˜”ìŠµë‹ˆë‹¤.");
+            //í”Œë ˆì´ì–´ì—ê²Œ ë°ë¯¸ì§€ ì£¼ëŠ” ë‚´ìš©ì¶”ê°€ ì˜ˆì •
 
-            // if ÇÃ·¹ÀÌ¾î HP 0¾¾ GameOver ¶ß°Ô ¿¹Á¤?
+            // if í”Œë ˆì´ì–´ HP 0ì”¨ GameOver ëœ¨ê²Œ ì˜ˆì •?
         }
     }
 
@@ -21,8 +21,8 @@ public class Obstacle2 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log($"Äİ¶óÀÌ´õ¿Í Ãæµ¹ÇÏ¿© {damage}ÀÇ µ¥¹ÌÁö¸¦ ÀÔÇû½À´Ï´Ù.");
-            //À§¿Í °°À½
+            Debug.Log($"ì½œë¼ì´ë”ì™€ ì¶©ëŒí•˜ì—¬ {damage}ì˜ ë°ë¯¸ì§€ë¥¼ ì…í˜”ìŠµë‹ˆë‹¤.");
+            //ìœ„ì™€ ê°™ìŒ
         }
     }*/
 }

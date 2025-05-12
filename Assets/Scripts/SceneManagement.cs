@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    // Å¸ÀÌÆ² ¾ÀÀ¸·Î ÀÌµ¿
+    // íƒ€ì´í‹€ ì”¬ìœ¼ë¡œ ì´ë™
     public void StartScene()
     {
         SceneManager.LoadScene("StartScene");
     }
 
-    // ¸ŞÀÎ ¾À(°ÔÀÓ È­¸é)À¸·Î ÀÌµ¿
+    // ë©”ì¸ ì”¬(ê²Œì„ í™”ë©´)ìœ¼ë¡œ ì´ë™
     public void MainScene()
     {
         SceneManager.LoadScene("MainSceneRyu");
@@ -19,16 +19,16 @@ public class SceneManagement : MonoBehaviour
 
     public void Retry()
     {
-        Time.timeScale = 1f; // °ÔÀÓ Àç°³
-        SceneManager.LoadScene("MainSceneRyu"); // ¸ŞÀÎ ¾ÀÀ¸·Î ÀÌµ¿
+        Time.timeScale = 1f; // ê²Œì„ ì¬ê°œ
+        SceneManager.LoadScene("MainSceneRyu"); // ë©”ì¸ ì”¬ìœ¼ë¡œ ì´ë™
     }
 
-    // °ÔÀÓ ¿À¹ö ¾ÀÀ¸·Î ÀÌµ¿
+    // ê²Œì„ ì˜¤ë²„ ì”¬ìœ¼ë¡œ ì´ë™
     public void Exit()
     {
-        // UnityEditor.EditorApplication.isPlaying = false; // ¿¡µğÅÍ¿¡¼­ ½ÇÇà ÁßÁö
-        // Application.Quit(); // ºôµåµÈ °ÔÀÓ¿¡¼­ Á¾·á
-        // °ÔÀÓ Á¾·á
+        // UnityEditor.EditorApplication.isPlaying = false; // ì—ë””í„°ì—ì„œ ì‹¤í–‰ ì¤‘ì§€
+        // Application.Quit(); // ë¹Œë“œëœ ê²Œì„ì—ì„œ ì¢…ë£Œ
+        // ê²Œì„ ì¢…ë£Œ
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

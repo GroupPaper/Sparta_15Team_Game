@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameOverUI gameOverUI; // °ÔÀÓ ¿À¹ö UI ½ºÅ©¸³Æ® ÂüÁ¶
-    private ScoreManager scoreManager; // Á¡¼ö °ü¸® ½ºÅ©¸³Æ® ÂüÁ¶
-    private TimeManager timeManager; // ½Ã°£ °ü¸® ½ºÅ©¸³Æ® ÂüÁ¶
+    public GameOverUI gameOverUI; // ê²Œì„ ì˜¤ë²„ UI ìŠ¤í¬ë¦½íŠ¸ ì°¸ì¡°
+    private ScoreManager scoreManager; // ì ìˆ˜ ê´€ë¦¬ ìŠ¤í¬ë¦½íŠ¸ ì°¸ì¡°
+    private TimeManager timeManager; // ì‹œê°„ ê´€ë¦¬ ìŠ¤í¬ë¦½íŠ¸ ì°¸ì¡°
 
     private void Awake()
     {
@@ -16,9 +16,9 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        int finalScore = scoreManager.GetTotalScore(); // ÃÖÁ¾ Á¡¼ö °¡Á®¿À±â
-        float elapsedTime = timeManager.isRunning ? timeManager.GetElapsedTime() : 0f; // °æ°ú ½Ã°£ °¡Á®¿À±â
+        int finalScore = scoreManager.GetTotalScore(); // ìµœì¢… ì ìˆ˜ ê°€ì ¸ì˜¤ê¸°
+        float elapsedTime = timeManager.isRunning ? timeManager.GetElapsedTime() : 0f; // ê²½ê³¼ ì‹œê°„ ê°€ì ¸ì˜¤ê¸°
 
-        gameOverUI.ShowGameOverPanel(finalScore, elapsedTime); // °ÔÀÓ ¿À¹ö UI Ç¥½Ã
+        gameOverUI.ShowGameOverPanel(finalScore, elapsedTime); // ê²Œì„ ì˜¤ë²„ UI í‘œì‹œ
     }
 }
