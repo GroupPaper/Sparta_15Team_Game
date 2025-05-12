@@ -95,7 +95,10 @@ public class Player : MonoBehaviour
             }
         }
 
-        jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
+        if (jumpAnim != null && jumpObject.activeSelf)
+        {
+            jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
+        }
 
         // 위치 이동
         transform.position += new Vector3(xSpeed * Time.deltaTime, verticalSpeed * Time.deltaTime, 0f);
@@ -107,13 +110,11 @@ public class Player : MonoBehaviour
             {
                 runObject.SetActive(false);
                 slideObject.SetActive(true);
-                slideAnim.SetBool("isSliding", true);
                 _slideController.TrySlide();
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                slideAnim.SetBool("isSliding", false);
                 slideObject.SetActive(false);
                 runObject.SetActive(true);
                 _slideController.EndSlide();
