@@ -1,38 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    // íƒ€ì´í‹€ ì”¬ìœ¼ë¡œ ì´ë™
+    [SerializeField] private AudioClip clickSfx; // Å¬¸¯ »ç¿îµå È¿°ú
+
+
+    // Å¸ÀÌÆ² ¾ÀÀ¸·Î ÀÌµ¿
     public void StartScene()
     {
+        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
         SceneManager.LoadScene("StartScene");
     }
 
-    // ë©”ì¸ ì”¬(ê²Œì„ í™”ë©´)ìœ¼ë¡œ ì´ë™
+    // ¸ŞÀÎ ¾À(°ÔÀÓ È­¸é)À¸·Î ÀÌµ¿
     public void MainScene()
     {
+        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
         SceneManager.LoadScene("MainSceneRyu");
     }
 
     public void Retry()
     {
-        Time.timeScale = 1f; // ê²Œì„ ì¬ê°œ
-        SceneManager.LoadScene("MainSceneRyu"); // ë©”ì¸ ì”¬ìœ¼ë¡œ ì´ë™
+        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
+        Time.timeScale = 1f; // °ÔÀÓ Àç°³
+        SceneManager.LoadScene("MainSceneRyu"); // ¸ŞÀÎ ¾ÀÀ¸·Î ÀÌµ¿
     }
 
-    // ê²Œì„ ì˜¤ë²„ ì”¬ìœ¼ë¡œ ì´ë™
+    // °ÔÀÓ ¿À¹ö ¾ÀÀ¸·Î ÀÌµ¿
     public void Exit()
     {
-        // UnityEditor.EditorApplication.isPlaying = false; // ì—ë””í„°ì—ì„œ ì‹¤í–‰ ì¤‘ì§€
-        // Application.Quit(); // ë¹Œë“œëœ ê²Œì„ì—ì„œ ì¢…ë£Œ
-        // ê²Œì„ ì¢…ë£Œ
+        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
+        // UnityEditor.EditorApplication.isPlaying = false; // ¿¡µğÅÍ¿¡¼­ ½ÇÇà ÁßÁö
+        // Application.Quit(); // ºôµåµÈ °ÔÀÓ¿¡¼­ Á¾·á
+        // °ÔÀÓ Á¾·á
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
+    }
+
+    private void PlayClick()
+    {
+        Debug.Log($"PlayClick È£Ãâ! clickSfx={clickSfx}, SoundManager.Instance={(SoundManager.Instance != null)}");
+        // Å¬¸¯ »ç¿îµå Àç»ı
+        if (clickSfx != null && SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySFX(clickSfx);
+        }
     }
 }
