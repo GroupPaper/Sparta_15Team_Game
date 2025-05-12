@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1435348081}
+  gameOverBgm: {fileID: 0}
 --- !u!4 &15701023
 Transform:
   m_ObjectHideFlags: 0
@@ -312,7 +313,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.017909646, y: 0.4455387}
@@ -861,7 +862,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.031341612, y: 1.084612}
@@ -1411,7 +1412,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 1.1875}
@@ -2230,6 +2231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b62f445dc207f04f93333d32b353a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfx: {fileID: 0}
 --- !u!4 &1287404458
 Transform:
   m_ObjectHideFlags: 0
