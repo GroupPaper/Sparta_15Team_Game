@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
 
     // ApplyItemEffect 중개 메서드
     public HPBar currentHP;
+    public MovementController movementController;
     public ScoreManager scoreManager;
 
     void Start()
@@ -173,7 +174,7 @@ public class Player : MonoBehaviour
 
     public void ApplySpeedBuffFromItem(float bonus, float duration)
     {
-        _movementController.ApplySpeedItemBuff(bonus, duration);
+        movementController.ApplySpeedItemBuff(bonus, duration);
     }
 
     public void AddScoreFromItem(int score)
