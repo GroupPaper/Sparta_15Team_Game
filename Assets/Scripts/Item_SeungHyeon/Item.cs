@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements.Experimental;
 
-public enum ItemEffectType {Heal, Speed, Score}
+public enum ItemEffectType {Heal, Speed, Score, MegaHeal, MegaSpeed, MegaScore}
 
 public class Item : MonoBehaviour
 {
@@ -27,12 +27,24 @@ public class Item : MonoBehaviour
             player.HealFromItem(10f); // 스태틱 처리 필요함
             break;
 
+            case ItemEffectType.MegaHeal:
+            player.HealFromItem(30f);
+            break;
+
         case ItemEffectType.Speed:
             player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가가
             break;
 
+        case ItemEffectType.MegaSpeed:
+            player.ApplySpeedBuffFromItem(10f, 5f); // 5초동안 이동속도 10 증가
+            break;
+
         case ItemEffectType.Score:
-            player.AddScoreFromItem(30);
+            player.AddScoreFromItem(100);
+            break;
+
+        case ItemEffectType.MegaScore:
+            player.AddScoreFromItem(300);
             break;
         };
     }
