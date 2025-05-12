@@ -12,13 +12,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private int jumpCount = 0;
     private bool isGrounded = false;
-    private bool isSliding = false; // 슬라이드 여부
+    private bool isisSliding = false; // 슬라이드 여부
 
     void Start()
     {
         animator = body.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        isSliding = false;
+        isisSliding = false;
     }
 
     void Update()
@@ -45,12 +45,12 @@ public class PlayerController : MonoBehaviour
         // 슬라이드 입력 처리
         if (Input.GetKey(KeyCode.LeftShift)) // 슬라이드 키를 누르고 있을 때
         {
-            isSliding = true;
+            isisSliding = true;
             animator.SetBool("isSliding", true); // 슬라이드 애니메이션 재생
         }
         else
         {
-            isSliding = false;
+            isisSliding = false;
             animator.SetBool("isSliding", false); // 슬라이드 애니메이션 멈춤
         }
 

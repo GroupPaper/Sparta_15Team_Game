@@ -8,14 +8,14 @@ public enum ItemEffectType {Heal, Speed, Score, MegaHeal, MegaSpeed, MegaScore}
 public class Item : MonoBehaviour
 {
     public ItemEffectType itemEffect;
-    public Player player; 
     
     private void OnTriggerEnter2D(Collider2D other) // 캐릭터가 아이템이랑 충돌하는 경우
     {
+        Player player = other.GetComponent<Player>();
         if(other.CompareTag("Player"))
         {
             ApplyItemEffect(player); // 플레이어에게 아이템 효과를 적용한다.
-            Destroy(other); // 아이템 제거
+            Destroy(gameObject); // 아이템 제거
         }
     }
 
@@ -24,7 +24,7 @@ public class Item : MonoBehaviour
         switch (itemEffect)
         {
             case ItemEffectType.Heal:
-            player.HealFromItem(10f); // 스태틱 처리 필요함
+            player.HealFromItem(10f); // HpBar쪽에 연결됨됨
             break;
 
             case ItemEffectType.MegaHeal:
@@ -32,7 +32,7 @@ public class Item : MonoBehaviour
             break;
 
         case ItemEffectType.Speed:
-            player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가
+            player.ApplySpeedBuffFromItem(5f, 3f); // 3초동안 이동속도 5 증가 MovementController 쪽 연결결
             break;
 
         case ItemEffectType.MegaSpeed:
@@ -40,7 +40,7 @@ public class Item : MonoBehaviour
             break;
 
         case ItemEffectType.Score:
-            player.AddScoreFromItem(100);
+            player.AddScoreFromItem(100); // ScoreManager 연결결
             break;
 
         case ItemEffectType.MegaScore:
