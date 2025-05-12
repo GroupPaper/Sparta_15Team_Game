@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = body.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        isSliding = false;
     }
 
     void Update()
@@ -51,12 +52,6 @@ public class PlayerController : MonoBehaviour
         {
             isSliding = false;
             animator.SetBool("isSliding", false); // 슬라이드 애니메이션 멈춤
-        }
-
-        // 슬라이딩 상태에서의 이동 처리 (이동 속도 적용)
-        if (isSliding)
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime); // 이동 속도 그대로 사용
         }
 
         // 애니메이션 처리 (필요시)
