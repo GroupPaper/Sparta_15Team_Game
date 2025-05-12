@@ -44,6 +44,8 @@ public class MovementController
         float currentSpeed = forwardSpeed + totalAcceleration;
         currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
 
+        Debug.Log($"현재속도: {currentSpeed}, 누적가속도: {totalAcceleration}");
+
         return currentSpeed;
     }
 
