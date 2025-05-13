@@ -17,7 +17,10 @@ public class Item : MonoBehaviour
             ApplyItemEffect(player);
             Destroy(gameObject);
         }
-        Debug.Log("Player를 찾을 수 없습니다.");
+        else if(player == null)
+        {
+            Debug.Log("Player를 찾을 수 없습니다.");
+        }
     }
 
     private void ApplyItemEffect(Player player)
