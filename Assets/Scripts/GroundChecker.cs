@@ -18,7 +18,7 @@ public class GroundChecker : MonoBehaviour
     [SerializeField] private GameObject slideObject;
     [SerializeField] private GameObject hitObject;
 
-    public void Init(JumpController jumpController, SlideController slideController, 
+    public void Init(JumpController jumpController, SlideController slideController,
     Transform playerTransform, Player player)
     {
         _jumpController = jumpController;
@@ -33,17 +33,17 @@ public class GroundChecker : MonoBehaviour
 
         // 어떤 오브젝트가 active 상태인지 가져오기
         GameObject activeObj;
-        if (_slideController.IsSliding())
+        if (_player.IsInvincible())
         {
-            activeObj = slideObject;
+            activeObj = hitObject;
         }
         else if (_jumpController.IsJumping() && !_player.IsInvincible())
         {
             activeObj = jumpObject;
         }
-        else if (_player.IsInvincible())
+        else if (_slideController.IsSliding())
         {
-            activeObj = hitObject;
+            activeObj = slideObject;
         }
         else
         {
@@ -54,8 +54,8 @@ public class GroundChecker : MonoBehaviour
         Collider2D col = activeObj.GetComponent<Collider2D>();
         if (col == null) return; // 없으면 스킵
 
-          // 콜라이더 높이의 절반
-        float originY = col.bounds.min.y + 0.15f;        // 콜라이더 맨 밑(min.y) 바로 아래
+        // 콜라이더 높이의 절반
+        float originY = col.bounds.min.y + 0.15f;  // 콜라이더 맨 밑(min.y) 바로 아래
         Vector2 boxOrigin = new Vector2(
             _playerTransform.position.x,
             originY
@@ -66,7 +66,7 @@ public class GroundChecker : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(boxOrigin, boxSize, 0f, Vector2.down, groundCheckDistance, groundLayer);
         isGrounded = hit.collider != null;
 
-        // 5디버그
+        // 디버그
         Vector2 tl = new Vector2(col.bounds.min.x, originY);
         Vector2 tr = new Vector2(col.bounds.max.x, originY);
         Vector2 bl = tl + Vector2.down * groundCheckDistance;
