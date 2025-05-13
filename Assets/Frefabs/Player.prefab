@@ -685,12 +685,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b9b02a63f3444bebdd6abfd84c0017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 3
+  forwardSpeed: 5
   acceleration: 0.1
   maxSpeed: 10
+  targetJumpHeight: 2.8
+  targetXDistance: 4
   jumpForce: 9
   gravity: -25
   maxJumpCount: 2
+  deathY: -10
+  gameManager: {fileID: 0}
   slideObject: {fileID: 5971117329714705187}
   runObject: {fileID: 6387237362452311807}
   jumpObject: {fileID: 5631962560410427977}
