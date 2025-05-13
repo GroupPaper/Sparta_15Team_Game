@@ -55,7 +55,7 @@ public class GroundChecker : MonoBehaviour
         if (col == null) return; // 없으면 스킵
 
         // 콜라이더 높이의 절반
-        float originY = col.bounds.min.y + 0.15f;  // 콜라이더 맨 밑(min.y) 바로 아래
+        float originY = col.bounds.min.y + 0.05f;  // 콜라이더 맨 밑(min.y) 바로 아래
         Vector2 boxOrigin = new Vector2(
             _playerTransform.position.x,
             originY
