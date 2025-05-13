@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b9b02a63f3444bebdd6abfd84c0017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 3
+  forwardSpeed: 5
   acceleration: 0.1
   maxSpeed: 10
   jumpForce: 9
@@ -715,7 +715,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  groundCheckDistance: 0.2
+  groundCheckDistance: 0.3
   runObject: {fileID: 6387237362452311807}
   jumpObject: {fileID: 5631962560410427977}
   slideObject: {fileID: 5971117329714705187}
