@@ -76,8 +76,6 @@ public class GroundChecker : MonoBehaviour
         Debug.DrawLine(bl, br, Color.yellow);
         Debug.DrawLine(tl, bl, Color.yellow);
         Debug.DrawLine(tr, br, Color.yellow);
-
-        Debug.Log("현재 콜라이더 크기: " + col.bounds.size);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
