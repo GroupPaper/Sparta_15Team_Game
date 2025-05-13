@@ -4,34 +4,34 @@ using UnityEngine;
 
 public class Obstacle2 : MonoBehaviour
 {
-    public float damage = 10f; // µ¥¹ÌÁö ¼öÄ¡
+    public float damage = 10f; // ë°ë¯¸ì§€ ìˆ˜ì¹˜
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Ãæµ¹ÇÑ ¿ÀºêÁ§Æ®: " + collision.gameObject.name);  // Ãæµ¹ÇÑ °´Ã¼ ÀÌ¸§ È®ÀÎ
-        Debug.Log("Ãæµ¹ÇÑ °´Ã¼ÀÇ ÅÂ±×: " + collision.gameObject.tag);  // Ãæµ¹ÇÑ °´Ã¼ÀÇ ÅÂ±× È®ÀÎ
+        Debug.Log("ì¶©ëŒí•œ ì˜¤ë¸Œì íŠ¸: " + collision.gameObject.name);  // ì¶©ëŒí•œ ê°ì²´ ì´ë¦„ í™•ì¸
+        Debug.Log("ì¶©ëŒí•œ ê°ì²´ì˜ íƒœê·¸: " + collision.gameObject.tag);  // ì¶©ëŒí•œ ê°ì²´ì˜ íƒœê·¸ í™•ì¸
 
-        // Player ÅÂ±×¸¦ °¡Áø °´Ã¼°¡ Ãæµ¹ÇßÀ» ¶§
+        // Player íƒœê·¸ë¥¼ ê°€ì§„ ê°ì²´ê°€ ì¶©ëŒí–ˆì„ ë•Œ
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("ÇÃ·¹ÀÌ¾î¿Í Ãæµ¹ÇÔ");
+            Debug.Log("í”Œë ˆì´ì–´ì™€ ì¶©ëŒí•¨");
 
-            // ºÎ¸ğ ¿ÀºêÁ§Æ®¿¡¼­ Player ÄÄÆ÷³ÍÆ® °¡Á®¿À±â
+            // ë¶€ëª¨ ì˜¤ë¸Œì íŠ¸ì—ì„œ Player ì»´í¬ë„ŒíŠ¸ ê°€ì ¸ì˜¤ê¸°
             Player player = collision.transform.parent.GetComponent<Player>();
 
             if (player != null)
             {
                 player.TakeDamage(damage);
-                Debug.Log("µ¥¹ÌÁö Àû¿ëµÊ" + damage);
+                Debug.Log("ë°ë¯¸ì§€ ì ìš©ë¨" + damage);
             }
             else
             {
-                Debug.LogWarning("Player ÄÄÆ÷³ÍÆ®¸¦ Ã£Áö ¸øÇß½À´Ï´Ù!");
+                Debug.LogWarning("Player ì»´í¬ë„ŒíŠ¸ë¥¼ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤!");
             }
         }
         else
         {
-            Debug.LogWarning("ÇÃ·¹ÀÌ¾î°¡ ¾Æ´Ñ ¿ÀºêÁ§Æ®¿Í Ãæµ¹Çß½À´Ï´Ù.");
+            Debug.LogWarning("í”Œë ˆì´ì–´ê°€ ì•„ë‹Œ ì˜¤ë¸Œì íŠ¸ì™€ ì¶©ëŒí–ˆìŠµë‹ˆë‹¤.");
         }
     }
 }

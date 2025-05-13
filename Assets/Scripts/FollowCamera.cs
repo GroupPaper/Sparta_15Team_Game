@@ -4,26 +4,17 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    public Transform target;
-    float offsetX;
-    float fixedYValue = 2.5f;
-
-    void Start()
-    {
-        if (target == null)
-            return;
-
-        offsetX = transform.position.x - target.position.x + 4.5f;
-    }
+    public Transform target;  // 타겟
+    public float offsetX = 5f;
+    public float fixedYValue = 0.5f;
 
     void Update()
     {
         if (target == null)
             return;
 
-        Vector3 pos = transform.position;
-        pos.x = target.position.x + offsetX;
-        pos.y = fixedYValue;
-        transform.position = pos;
+        Vector3 targetPosition = target.position;
+        Vector3 newPosition = new Vector3(targetPosition.x + offsetX, fixedYValue, transform.position.z);
+        transform.position = newPosition;
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GroundChecker : MonoBehaviour
 {
+    private Player _player;
     private JumpController _jumpController;
     private SlideController _slideController;
     private Transform _playerTransform;
@@ -12,16 +13,18 @@ public class GroundChecker : MonoBehaviour
 
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckDistance = 0.05f;
-    [SerializeField] private float boxThickness = 0.2f;
     [SerializeField] private GameObject runObject;
     [SerializeField] private GameObject jumpObject;
     [SerializeField] private GameObject slideObject;
+    [SerializeField] private GameObject hitObject;
 
-    public void Init(JumpController jumpController, SlideController slideController, Transform playerTransform)
+    public void Init(JumpController jumpController, SlideController slideController, 
+    Transform playerTransform, Player player)
     {
         _jumpController = jumpController;
         _slideController = slideController;
         _playerTransform = playerTransform;
+        _player = player;
     }
 
     void Update()
@@ -34,9 +37,13 @@ public class GroundChecker : MonoBehaviour
         {
             activeObj = slideObject;
         }
-        else if (_jumpController.IsJumping())
+        else if (_jumpController.IsJumping() && !_player.IsInvincible())
         {
             activeObj = jumpObject;
+        }
+        else if (_player.IsInvincible())
+        {
+            activeObj = hitObject;
         }
         else
         {
@@ -47,10 +54,8 @@ public class GroundChecker : MonoBehaviour
         Collider2D col = activeObj.GetComponent<Collider2D>();
         if (col == null) return; // 없으면 스킵
 
-        // 박스 사이즈 origin 계산
-        float width = col.bounds.size.x;
-        float extentsY = col.bounds.extents.y;           // 콜라이더 높이의 절반
-        float originY = col.bounds.min.y - -0.15f;        // 콜라이더 맨 밑(min.y) 바로 아래
+          // 콜라이더 높이의 절반
+        float originY = col.bounds.min.y + 0.15f;        // 콜라이더 맨 밑(min.y) 바로 아래
         Vector2 boxOrigin = new Vector2(
             _playerTransform.position.x,
             originY

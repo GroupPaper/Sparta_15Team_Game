@@ -6,37 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    [SerializeField] private AudioClip clickSfx; // Å¬¸¯ »ç¿îµå È¿°ú
+    [SerializeField] private AudioClip clickSfx; // í´ë¦­ ì‚¬ìš´ë“œ íš¨ê³¼
 
 
-    // Å¸ÀÌÆ² ¾ÀÀ¸·Î ÀÌµ¿
+    // íƒ€ì´í‹€ ì”¬ìœ¼ë¡œ ì´ë™
     public void StartScene()
     {
-        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
+        PlayClick(); // í´ë¦­ ì‚¬ìš´ë“œ ì¬ìƒ
         SceneManager.LoadScene("StartScene");
     }
 
-    // ¸ŞÀÎ ¾À(°ÔÀÓ È­¸é)À¸·Î ÀÌµ¿
+    // ë©”ì¸ ì”¬(ê²Œì„ í™”ë©´)ìœ¼ë¡œ ì´ë™
     public void MainScene()
     {
-        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
+        PlayClick(); // í´ë¦­ ì‚¬ìš´ë“œ ì¬ìƒ
         SceneManager.LoadScene("MainSceneRyu");
     }
 
     public void Retry()
     {
-        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
-        Time.timeScale = 1f; // °ÔÀÓ Àç°³
-        SceneManager.LoadScene("MainSceneRyu"); // ¸ŞÀÎ ¾ÀÀ¸·Î ÀÌµ¿
+        PlayClick(); // í´ë¦­ ì‚¬ìš´ë“œ ì¬ìƒ
+        Time.timeScale = 1f; // ê²Œì„ ì¬ê°œ
+        SceneManager.LoadScene("MainSceneRyu"); // ë©”ì¸ ì”¬ìœ¼ë¡œ ì´ë™
     }
 
-    // °ÔÀÓ ¿À¹ö ¾ÀÀ¸·Î ÀÌµ¿
+    // ê²Œì„ ì˜¤ë²„ ì”¬ìœ¼ë¡œ ì´ë™
     public void Exit()
     {
-        PlayClick(); // Å¬¸¯ »ç¿îµå Àç»ı
-        // UnityEditor.EditorApplication.isPlaying = false; // ¿¡µğÅÍ¿¡¼­ ½ÇÇà ÁßÁö
-        // Application.Quit(); // ºôµåµÈ °ÔÀÓ¿¡¼­ Á¾·á
-        // °ÔÀÓ Á¾·á
+        PlayClick(); // í´ë¦­ ì‚¬ìš´ë“œ ì¬ìƒ
+        // UnityEditor.EditorApplication.isPlaying = false; // ì—ë””í„°ì—ì„œ ì‹¤í–‰ ì¤‘ì§€
+        // Application.Quit(); // ë¹Œë“œëœ ê²Œì„ì—ì„œ ì¢…ë£Œ
+        // ê²Œì„ ì¢…ë£Œ
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -46,8 +46,8 @@ public class SceneManagement : MonoBehaviour
 
     private void PlayClick()
     {
-        Debug.Log($"PlayClick È£Ãâ! clickSfx={clickSfx}, SoundManager.Instance={(SoundManager.Instance != null)}");
-        // Å¬¸¯ »ç¿îµå Àç»ı
+        Debug.Log($"PlayClick í˜¸ì¶œ! clickSfx={clickSfx}, SoundManager.Instance={(SoundManager.Instance != null)}");
+        // í´ë¦­ ì‚¬ìš´ë“œ ì¬ìƒ
         if (clickSfx != null && SoundManager.Instance != null)
         {
             SoundManager.Instance.PlaySFX(clickSfx);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementController
+public class MovementController : MonoBehaviour
 {
     private float forwardSpeed; // 기본 속도
     private float acceleration; // 초당 가속력
@@ -24,10 +24,7 @@ public class MovementController
     public void ApplySpeedItemBuff(float bonusSpeed, float duration)
     {
         maxSpeed = originalMaxSpeed + bonusSpeed;
-        if(runner != null)
-        {
-            runner.StartCoroutine(ResetMaxSpeedAfter(duration));
-        }
+        StartCoroutine(ResetMaxSpeedAfter(duration));
     }
 
     private IEnumerator ResetMaxSpeedAfter(float duration) // duration 시간 만큼 버프 지속효과 제공 함수

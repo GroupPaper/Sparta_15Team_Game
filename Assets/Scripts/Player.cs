@@ -3,12 +3,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private MovementController _movementController = new MovementController(); // 이동 컨트롤러
+    private MovementController _movementController; // 이동 컨트롤러
     private JumpController _jumpController = new JumpController(); // 점프 컨트롤러
     private GroundChecker _groundChecker; // 바닥 체크
     private SlideController _slideController; // 슬라이드 컨트롤러
     private Animator jumpAnim; // 점프 애니메이션
-    private Animator slideAnim; // 슬라이드 애니메이션
     [SerializeField] private float forwardSpeed = 3f; // 기본 속도
     [SerializeField] private float acceleration = 0.1f; // 초당 가속력
     [SerializeField] private float maxSpeed = 10f; // 현재 최고 속도
@@ -22,6 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject slideObject; // 슬라이드 오브젝트
     [SerializeField] private GameObject runObject; // 달리기 오브젝트
     [SerializeField] private GameObject jumpObject; // 점프 오브젝트
+    [SerializeField] private GameObject hitObject; // 피격무적 오브젝트
 
     [SerializeField] private AudioClip footStepSfx; // 발소리 SFX
     [SerializeField] private AudioClip jumpSfx; // 점프 SFX
@@ -30,30 +30,67 @@ public class Player : MonoBehaviour
     private float footstepInterval = 0.4f; // 발소리 간격
     private float footstepTimer = 0f; // 발소리 타이머
 
+    private bool isInvincible = false; // 무적 상태 여부
+    private float invincibleDuration = 2f; // 무적 지속 시간 (초)
+    private float invincibleTimer = 0f; // 타이머
+
+    public bool IsInvincible() => isInvincible;
+
     // ApplyItemEffect 중개 메서드
     public HPBar currentHP;
-    public MovementController movementController;
     public ScoreManager scoreManager;
 
     void Start()
     {
+        if (currentHP == null)
+            currentHP = GetComponent<HPBar>();
+
+        if (scoreManager == null)
+            scoreManager = FindObjectOfType<ScoreManager>();
+
+        _movementController = gameObject.AddComponent<MovementController>();
         _movementController.Init(forwardSpeed, acceleration, maxSpeed);
+        
         _jumpController.Init(jumpForce, maxJumpCount);
 
         _slideController = gameObject.AddComponent<SlideController>();
         _slideController.Init(_jumpController);
 
         _groundChecker = GetComponent<GroundChecker>();
-        _groundChecker.Init(_jumpController, _slideController, transform);
+        _groundChecker.Init(_jumpController, _slideController, transform, this);
 
         jumpAnim = jumpObject.GetComponent<Animator>();
-        slideAnim = slideObject.GetComponent<Animator>();
+
+        runObject.SetActive(true);
+        slideObject.SetActive(false);
+        jumpObject.SetActive(false);
+        hitObject.SetActive(false);
+
+        invincibleTimer = 0f;
     }
 
     private bool wasSliding = false; // 슬라이드 상태를 저장하기 위한 변수
 
     void Update()
     {
+        if (isInvincible)
+        {
+            invincibleTimer -= Time.deltaTime;
+
+            if (invincibleTimer <= 0f)
+            {
+                // 무적 상태 종료
+                isInvincible = false;
+                hitObject.SetActive(false); // 무적 오브젝트 비활성화
+
+                runObject.SetActive(true);
+            }
+            if (!_jumpController.IsJumping())  // 점프 중이 아니라면
+            {
+                verticalSpeed = 0f;  // 수직 속도 초기화
+            }
+        }
+
         float xSpeed = _movementController.GetCurrentSpeed();
         bool isGrounded = _groundChecker.IsGrounded();
 
@@ -80,15 +117,18 @@ public class Player : MonoBehaviour
                 verticalSpeed = jumpForce;
                 SoundManager.Instance.PlaySFX(jumpSfx);
 
-                if (_slideController.IsSliding())
+                if (_slideController.IsSliding() && !isInvincible)
                 {
                     slideObject.SetActive(false);
                     _slideController.EndSlide();
                 }
 
-                runObject.SetActive(false);
-                jumpObject.SetActive(true);
-                Debug.Log("점프 시 verticalSpeed: " + verticalSpeed);
+                if(!isInvincible)
+                {
+                    runObject.SetActive(false);
+                    jumpObject.SetActive(true);
+                    Debug.Log("점프 시 verticalSpeed: " + verticalSpeed);
+                }
             }
         }
 
@@ -101,23 +141,26 @@ public class Player : MonoBehaviour
             verticalSpeed = 0f;
             _jumpController.ResetJump();
             
-            // 점프 애니메이션 끄기
-            jumpObject.SetActive(false);
+            if(!isInvincible)
+            {
+                // 점프 애니메이션 끄기
+                jumpObject.SetActive(false);
 
-            // 달리기/슬라이드 애니메이션은 상태에 따라
-            if (_slideController.IsSliding())
-            {
-                slideObject.SetActive(true);
-                runObject.SetActive(false);
-            }
-            else
-            {
-                runObject.SetActive(true);
-                slideObject.SetActive(false);
+                // 달리기/슬라이드 애니메이션은 상태에 따라
+                if (_slideController.IsSliding())
+                {
+                    slideObject.SetActive(true);
+                    runObject.SetActive(false);
+                }
+                else
+                {
+                    runObject.SetActive(true);
+                    slideObject.SetActive(false);
+                }
             }
         }
 
-        if (jumpAnim != null && jumpObject.activeSelf)
+        if (jumpAnim != null && jumpObject.activeSelf && !isInvincible)
         {
             jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
         }
@@ -138,31 +181,46 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                runObject.SetActive(false);
-                slideObject.SetActive(true);
+                if(!isInvincible)
+                {
+                    runObject.SetActive(false);
+                    slideObject.SetActive(true);
+                }
                 _slideController.TrySlide();
+                
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                slideObject.SetActive(false);
-                runObject.SetActive(true);
+                if(!isInvincible)
+                {
+                    slideObject.SetActive(false);
+                    runObject.SetActive(true);
+                }
                 _slideController.EndSlide();
             }
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("플레이어 충돌 발생: " + collision.gameObject.name);
-        _groundChecker.OnCollisionEnter2D(collision);
+        if (collision.CompareTag("Obstacle"))
+        {
+            if (!isInvincible)
+            {
+                runObject.SetActive(false);
+                slideObject.SetActive(false);
+                jumpObject.SetActive(false);
+                hitObject.SetActive(true); // 피격 오브젝트 활성화
+                isInvincible = true; // 무적 상태 시작
+                invincibleTimer = invincibleDuration; // 무적 타이머 설정
+            }
+        }
+        else
+        {
+            Debug.Log("장애물 아님");
+        }
     }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        _groundChecker.OnCollisionExit2D(collision);
-    }
-
     // ApplyItemEffect 중개 메서드
     public void HealFromItem(float amount)
     {
@@ -171,7 +229,7 @@ public class Player : MonoBehaviour
 
     public void ApplySpeedBuffFromItem(float bonus, float duration)
     {
-        movementController.ApplySpeedItemBuff(bonus, duration);
+        _movementController.ApplySpeedItemBuff(bonus, duration);
     }
 
     public void AddScoreFromItem(int score)
@@ -181,6 +239,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (isInvincible) return;
         if (currentHP != null)
             currentHP.Damage(damage);
     }

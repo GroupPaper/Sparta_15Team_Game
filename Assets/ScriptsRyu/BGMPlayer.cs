@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BGMPlayer : MonoBehaviour
 {
-    [SerializeField] private AudioClip bgmClip; // BGM Å¬¸³
+    [SerializeField] private AudioClip bgmClip; // BGM í´ë¦½
 
     private void Start()
     {
-        SoundManager.Instance.PlayBGM(bgmClip, loop: true); // BGM Àç»ı
+        SoundManager.Instance.PlayBGM(bgmClip, loop: true); // BGM ì¬ìƒ
     }
 }
