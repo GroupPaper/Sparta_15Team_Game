@@ -100430,9 +100430,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1065307329}
     - target: {fileID: 2711347481872449641, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2711347481872449641, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
+      propertyPath: forwardSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2711347481872449641, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 600968949}
+    - target: {fileID: 5631962560410427977, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971117329714705187, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6387237362452311807, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6811919893197410140, guid: 977888b5ab3d94184a38b6a374310b63, type: 3}
       propertyPath: m_Name
       value: Player
