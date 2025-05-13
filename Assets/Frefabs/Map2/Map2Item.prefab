@@ -44,9 +44,6 @@ Transform:
   - {fileID: 7163774441993160583}
   - {fileID: 37059388657880653}
   - {fileID: 8052495831336721561}
-  - {fileID: 6378668934205968794}
-  - {fileID: 186884469909725458}
-  - {fileID: 8329287090409656805}
   - {fileID: 3184327847760971551}
   - {fileID: 3712405325857327841}
   - {fileID: 3153110684890453116}
@@ -165,6 +162,14 @@ Transform:
   - {fileID: 5721860185125525686}
   - {fileID: 3200358246660051470}
   - {fileID: 6197550010596614720}
+  - {fileID: 9214233241763581351}
+  - {fileID: 4415157830563127027}
+  - {fileID: 646112803478352231}
+  - {fileID: 8448015164249360346}
+  - {fileID: 8593179955694881122}
+  - {fileID: 6378668934205968794}
+  - {fileID: 186884469909725458}
+  - {fileID: 8329287090409656805}
   - {fileID: 8226681140069558325}
   - {fileID: 5829432453868541732}
   - {fileID: 2315011363086879882}
@@ -175,11 +180,6 @@ Transform:
   - {fileID: 8611342228724589058}
   - {fileID: 1469827479136995261}
   - {fileID: 2988918031130266344}
-  - {fileID: 9214233241763581351}
-  - {fileID: 4415157830563127027}
-  - {fileID: 646112803478352231}
-  - {fileID: 8448015164249360346}
-  - {fileID: 8593179955694881122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &861615544046136
@@ -193,10 +193,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (104)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -238,10 +234,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -263,10 +255,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (118)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,10 +296,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -333,10 +317,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (122)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -378,10 +358,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -403,10 +379,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (45)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -446,10 +418,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -510,17 +478,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 728358323796488682, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3664327899834815502, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
       propertyPath: m_Name
       value: SpeedMultiplier (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -543,10 +503,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -588,10 +544,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -613,10 +565,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (28)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -658,10 +606,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -683,10 +627,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (127)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,10 +668,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -753,10 +689,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (86)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -798,10 +730,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -823,10 +751,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (73)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -868,10 +792,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -893,10 +813,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (96)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -938,10 +854,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -963,10 +875,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (50)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1008,10 +916,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1033,10 +937,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (128)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1078,10 +978,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1103,10 +999,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (48)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1148,10 +1040,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1173,10 +1061,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (93)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1216,10 +1100,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1284,10 +1164,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1309,10 +1185,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (83)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,10 +1226,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1379,10 +1247,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1424,10 +1288,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1449,10 +1309,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (99)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1494,10 +1350,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1519,10 +1371,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (100)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1564,10 +1412,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1589,10 +1433,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (71)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1632,10 +1472,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1700,10 +1536,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (10)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1725,10 +1557,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (95)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1770,10 +1598,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1795,10 +1619,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1840,10 +1660,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1865,10 +1681,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (43)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1910,10 +1722,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1935,10 +1743,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (117)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1980,10 +1784,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2005,10 +1805,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2050,10 +1846,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2075,10 +1867,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (92)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2120,10 +1908,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2145,10 +1929,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (46)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2190,10 +1970,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2215,10 +1991,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (32)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2260,10 +2032,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2285,10 +2053,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (47)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2328,10 +2092,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2396,10 +2156,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2421,10 +2177,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2466,10 +2218,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2491,10 +2239,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (85)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2536,10 +2280,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2561,10 +2301,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (90)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2606,10 +2342,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2631,10 +2363,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2676,10 +2404,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2701,10 +2425,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (130)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2746,10 +2466,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2771,10 +2487,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (44)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2816,10 +2528,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2841,10 +2549,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2886,10 +2590,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2911,10 +2611,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (115)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2956,10 +2652,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2981,10 +2673,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3024,10 +2712,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3092,10 +2776,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3117,10 +2797,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3162,10 +2838,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3187,10 +2859,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (59)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3232,10 +2900,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3257,10 +2921,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (81)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3302,10 +2962,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3327,10 +2983,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (58)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3372,10 +3024,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3397,10 +3045,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (123)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3440,10 +3084,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3508,10 +3148,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3570,17 +3206,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 728358323796488682, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3664327899834815502, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
       propertyPath: m_Name
       value: SpeedMultiplier
-      objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3644,10 +3272,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery (16)
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3669,10 +3293,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (29)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3714,10 +3334,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3739,10 +3355,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (70)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3784,10 +3396,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3809,10 +3417,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (78)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3854,10 +3458,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3879,10 +3479,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (110)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3924,10 +3520,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3949,10 +3541,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (33)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3994,10 +3582,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4019,10 +3603,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (34)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4064,10 +3644,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4089,10 +3665,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (94)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4134,10 +3706,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4159,10 +3727,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (125)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4204,10 +3768,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4229,10 +3789,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (42)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4274,10 +3830,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4299,10 +3851,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (77)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4344,10 +3892,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4369,10 +3913,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (113)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4414,10 +3954,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4439,10 +3975,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4484,10 +4016,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4509,10 +4037,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (91)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4554,10 +4078,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4579,10 +4099,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (112)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4624,10 +4140,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4649,10 +4161,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (98)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4694,10 +4202,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4719,10 +4223,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (114)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4764,10 +4264,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4789,10 +4285,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (65)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4834,10 +4326,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4859,10 +4347,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (62)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4904,10 +4388,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4929,10 +4409,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (107)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4974,10 +4450,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4999,10 +4471,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (76)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5044,10 +4512,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5069,10 +4533,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5114,10 +4574,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5139,10 +4595,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (60)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5182,10 +4634,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5250,10 +4698,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5275,10 +4719,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5320,10 +4760,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5345,10 +4781,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (106)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5390,10 +4822,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5415,10 +4843,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (64)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5460,10 +4884,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5485,10 +4905,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (74)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5530,10 +4946,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5555,10 +4967,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (105)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5600,10 +5008,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5625,10 +5029,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (109)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5670,10 +5070,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5695,10 +5091,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (68)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5740,10 +5132,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5765,10 +5153,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (121)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5810,10 +5194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5835,10 +5215,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (39)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5880,10 +5256,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5905,10 +5277,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5948,10 +5316,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6016,10 +5380,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6041,10 +5401,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (54)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6086,10 +5442,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6111,10 +5463,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6156,10 +5504,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6181,10 +5525,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (55)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6226,10 +5566,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6251,10 +5587,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (124)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6296,10 +5628,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6321,10 +5649,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (37)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6366,10 +5690,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6391,10 +5711,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (52)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6436,10 +5752,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6461,10 +5773,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (53)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6506,10 +5814,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6531,10 +5835,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (102)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6576,10 +5876,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6601,10 +5897,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (79)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6646,10 +5938,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6671,10 +5959,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (69)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6714,10 +5998,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6782,10 +6062,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6807,10 +6083,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (101)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6852,10 +6124,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6877,10 +6145,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (30)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6922,10 +6186,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6947,10 +6207,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (35)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6992,10 +6248,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7017,10 +6269,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7062,10 +6310,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7087,10 +6331,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (80)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7132,10 +6372,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7157,10 +6393,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7202,10 +6434,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7227,10 +6455,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (38)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7272,10 +6496,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7297,10 +6517,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (97)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7342,10 +6558,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7367,10 +6579,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (49)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7410,10 +6618,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7478,10 +6682,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7503,10 +6703,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7548,10 +6744,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7573,10 +6765,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7618,10 +6806,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7643,10 +6827,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7688,10 +6868,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7713,10 +6889,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7758,10 +6930,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7783,10 +6951,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (75)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7828,10 +6992,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7853,10 +7013,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (116)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7898,10 +7054,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7923,10 +7075,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7968,10 +7116,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7993,10 +7137,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8038,10 +7178,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8063,10 +7199,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (120)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8108,10 +7240,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8133,10 +7261,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (126)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8178,10 +7302,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8203,10 +7323,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (103)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8248,10 +7364,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8273,10 +7385,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (61)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8318,10 +7426,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8343,10 +7447,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (87)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8386,10 +7486,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8454,10 +7550,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8520,10 +7612,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8545,10 +7633,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (66)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8590,10 +7674,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8615,10 +7695,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (36)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8660,10 +7736,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8685,10 +7757,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8728,10 +7796,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8796,10 +7860,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8821,10 +7881,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8866,10 +7922,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8891,10 +7943,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8936,10 +7984,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8961,10 +8005,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (31)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9006,10 +8046,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9031,10 +8067,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (51)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9076,10 +8108,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9101,10 +8129,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (129)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9146,10 +8170,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9171,10 +8191,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (111)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9216,10 +8232,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9241,10 +8253,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (57)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9286,10 +8294,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9311,10 +8315,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (40)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9354,10 +8354,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9422,10 +8418,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthRecovery (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 8538126146710996380, guid: 9de32dee4d1fcf24b898b6dd71b69d9a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9447,10 +8439,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9492,10 +8480,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9517,10 +8501,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (108)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9562,10 +8542,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9587,10 +8563,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (119)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9632,10 +8604,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9657,10 +8625,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (56)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9702,10 +8666,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9727,10 +8687,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (88)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9772,10 +8728,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9797,10 +8749,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (89)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9840,10 +8788,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9904,17 +8848,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 728358323796488682, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3664327899834815502, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
       propertyPath: m_Name
       value: SpeedMultiplier (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9937,10 +8873,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (82)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9980,10 +8912,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10048,10 +8976,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10073,10 +8997,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (41)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10118,10 +9038,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10143,10 +9059,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (67)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10186,10 +9098,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10254,10 +9162,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10279,10 +9183,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (63)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10324,10 +9224,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10349,10 +9245,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (84)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10394,10 +9286,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10419,10 +9307,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (25)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10464,10 +9348,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10489,10 +9369,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10532,10 +9408,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10600,10 +9472,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedMultiplier (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 7143148218996799987, guid: 227f3a87e85877e49977d1e229e7fe47, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10625,10 +9493,6 @@ PrefabInstance:
     - target: {fileID: 411762307665338002, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_Name
       value: ScoreBonus (72)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638666282540692469, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10668,10 +9532,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3801708599043598055, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568146623167058877, guid: 0f7c2cc906459c543b231cac1859f9be, type: 3}
-      propertyPath: itemEffect
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
