@@ -83,17 +83,18 @@ public class Player : MonoBehaviour
     void Update()
     {
 
-        if (transform.position.y < deathY)
+        if (transform.position.y < deathY) // Y값에 따라 게임오버 
         {
             gameManager.GameOver();
             enabled = false;
             return;
         }
+        // 무적 관련 함수
         UpdateInvincible();
 
         bool isGrounded = _groundChecker.IsGrounded();
         float xSpeed = _movementController.GetCurrentSpeed();
-
+        
         if (isGrounded && xSpeed > 0f && !_slideController.IsSliding())
         {
             // 발소리 재생
@@ -140,6 +141,7 @@ public class Player : MonoBehaviour
             }
         }
 
+        // 점프 떨어질때 애니메이션
         if (jumpAnim != null && jumpObject.activeSelf && !isInvincible)
         {
             jumpAnim.SetFloat("VerticalSpeed", verticalSpeed);
