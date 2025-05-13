@@ -78,28 +78,6 @@ public class GroundChecker : MonoBehaviour
         Debug.DrawLine(tr, br, Color.yellow);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            if (_jumpController.JumpCount > 0)
-            {
-                Debug.Log("바닥 점프리셋");
-                _jumpController.ResetJump();
-            }
-            isGrounded = true;
-        }
-    }
-
-    public void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-            Debug.Log("바닥에서 떨어짐");
-        }
-    }
-
     public bool IsGrounded()
     {
         return isGrounded;
