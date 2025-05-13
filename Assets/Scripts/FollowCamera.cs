@@ -8,7 +8,7 @@ public class FollowCamera : MonoBehaviour
     public float offsetX = 5f;
     public float fixedYValue = 0.5f;
 
-    void Update()
+    void LateUpdate()
     {
         if (target == null)
             return;

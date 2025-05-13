@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float gravity = -20f; // 중력
     [SerializeField] private int maxJumpCount = 2; // 최대 점프 횟수
 
-    [SerializeField] private float deathY = -10f; // 게임오버 값
+    [SerializeField] private float deathY = -4.35f; // 게임오버 값
     [SerializeField] private GameManager gameManager;
    
     private float verticalSpeed = 0f; // 수직 속도
@@ -146,7 +146,6 @@ public class Player : MonoBehaviour
 
         // 위치 이동
         transform.position += new Vector3(xSpeed * Time.deltaTime, verticalSpeed * Time.deltaTime, 0f);
-
         bool isSliding = _slideController.IsSliding();
 
         if (isSliding && !wasSliding)
