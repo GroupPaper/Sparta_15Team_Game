@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
         _slideController.Init(_jumpController);
 
         _groundChecker = GetComponent<GroundChecker>();
-        _groundChecker.Init(_jumpController, _slideController, transform, this);
+        _groundChecker.Init(transform, this);
 
         jumpAnim = jumpObject.GetComponent<Animator>();
 
@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
         if (transform.position.y < deathY)
         {
             gameManager.GameOver();
@@ -90,8 +91,8 @@ public class Player : MonoBehaviour
         }
         UpdateInvincible();
 
-        float xSpeed = _movementController.GetCurrentSpeed();
         bool isGrounded = _groundChecker.IsGrounded();
+        float xSpeed = _movementController.GetCurrentSpeed();
 
         if (isGrounded && xSpeed > 0f && !_slideController.IsSliding())
         {
@@ -259,7 +260,7 @@ public class Player : MonoBehaviour
             UpdateObject();
         }
 
-        if (!_jumpController.IsJumping())
+        if (_groundChecker.IsGrounded())
         {
             verticalSpeed = 0f;
         }
