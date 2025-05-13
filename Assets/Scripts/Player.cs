@@ -83,7 +83,24 @@ public class Player : MonoBehaviour
                 isInvincible = false;
                 hitObject.SetActive(false); // 무적 오브젝트 비활성화
 
-                runObject.SetActive(true);
+                if (_jumpController.IsJumping())
+                {
+                    jumpObject.SetActive(true);
+                    slideObject.SetActive(false);
+                    runObject.SetActive(false);
+                }
+                else if (_slideController.IsSliding())
+                {
+                    slideObject.SetActive(true);
+                    jumpObject.SetActive(false);
+                    runObject.SetActive(false);
+                }
+                else
+                {
+                    runObject.SetActive(true);
+                    jumpObject.SetActive(false);
+                    slideObject.SetActive(false);
+                }
             }
             if (!_jumpController.IsJumping())  // 점프 중이 아니라면
             {
@@ -202,25 +219,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Obstacle"))
-        {
-            if (!isInvincible)
-            {
-                runObject.SetActive(false);
-                slideObject.SetActive(false);
-                jumpObject.SetActive(false);
-                hitObject.SetActive(true); // 피격 오브젝트 활성화
-                isInvincible = true; // 무적 상태 시작
-                invincibleTimer = invincibleDuration; // 무적 타이머 설정
-            }
-        }
-        else
-        {
-            Debug.Log("장애물 아님");
-        }
-    }
     // ApplyItemEffect 중개 메서드
     public void HealFromItem(float amount)
     {
@@ -240,7 +238,16 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         if (isInvincible) return;
+
         if (currentHP != null)
             currentHP.Damage(damage);
+
+        isInvincible = true;
+        invincibleTimer = invincibleDuration;
+
+        runObject.SetActive(false);
+        jumpObject.SetActive(false);
+        slideObject.SetActive(false);
+        hitObject.SetActive(true);
     }
 }
