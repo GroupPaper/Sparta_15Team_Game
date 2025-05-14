@@ -1,10 +1,10 @@
-# Sparta\_15Team\_Game
+# Sparta\_15Team\_Knight run
 
 Unity 기반의 2D 게임 개발 프로젝트로, 팀원들과 협업하여 다양한 게임 기능을 구현하고 있습니다.
 
 ## 📌 프로젝트 개요
 
-* **프로젝트명**: Sparta\_15Team\_Game
+* **프로젝트명**: Sparta\_15Team\_Knight run
 * **목표**: Unity를 활용한 2D 게임 개발 및 기능 구현
 * **진행 방식**: GitHub를 통한 협업 및 버전 관리
 
